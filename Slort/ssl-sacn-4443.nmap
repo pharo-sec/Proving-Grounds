@@ -1,0 +1,8 @@
+# Nmap 7.80 scan initiated Fri Aug 13 21:31:13 2021 as: nmap --script=ssl-heartbleed -p 4443 -Pn -oA ssl-sacn-4443 192.168.79.53
+Nmap scan report for 192.168.79.53
+Host is up (0.063s latency).
+
+PORT     STATE SERVICE
+4443/tcp open  pharos
+
+# Nmap done at Fri Aug 13 21:31:13 2021 -- 1 IP address (1 host up) scanned in 0.46 seconds

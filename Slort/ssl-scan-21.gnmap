@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Aug 13 21:32:28 2021 as: nmap --script=ssl-heartbleed -p 21 -Pn -oA ssl-scan-21 192.168.79.53
+Host: 192.168.79.53 ()	Status: Up
+Host: 192.168.79.53 ()	Ports: 21/open/tcp//ftp///
+# Nmap done at Fri Aug 13 21:32:29 2021 -- 1 IP address (1 host up) scanned in 0.63 seconds

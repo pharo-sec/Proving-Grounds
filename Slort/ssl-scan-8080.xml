@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug 13 21:32:02 2021 as: nmap -&#45;script=ssl-heartbleed -p 8080 -Pn -oA ssl-scan-8080 192.168.79.53 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script=ssl-heartbleed -p 8080 -Pn -oA ssl-scan-8080 192.168.79.53" start="1628904722" startstr="Fri Aug 13 21:32:02 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="8080"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1628904722" endtime="1628904722"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.79.53" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="73397" rttvar="73397" to="366985"/>
+</host>
+<runstats><finished time="1628904722" timestr="Fri Aug 13 21:32:02 2021" elapsed="0.46" summary="Nmap done at Fri Aug 13 21:32:02 2021; 1 IP address (1 host up) scanned in 0.46 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

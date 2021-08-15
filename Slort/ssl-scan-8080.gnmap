@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Aug 13 21:32:02 2021 as: nmap --script=ssl-heartbleed -p 8080 -Pn -oA ssl-scan-8080 192.168.79.53
+Host: 192.168.79.53 ()	Status: Up
+Host: 192.168.79.53 ()	Ports: 8080/open/tcp//http-proxy///
+# Nmap done at Fri Aug 13 21:32:02 2021 -- 1 IP address (1 host up) scanned in 0.46 seconds

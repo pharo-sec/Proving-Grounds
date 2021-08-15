@@ -1,0 +1,69 @@
+# Nmap 7.80 scan initiated Fri Aug 13 20:57:16 2021 as: nmap -Pn -p 21,135,139,445,3306,4443,5040,7680,8080,49664,49665,49666,49667,49668 -sC -sV -oA nmap/service-scan 192.168.79.53
+Nmap scan report for 192.168.79.53
+Host is up (0.062s latency).
+
+PORT      STATE    SERVICE       VERSION
+21/tcp    open     ftp           FileZilla ftpd 0.9.41 beta
+| ftp-syst: 
+|_  SYST: UNIX emulated by FileZilla
+135/tcp   open     msrpc         Microsoft Windows RPC
+139/tcp   open     netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds?
+3306/tcp  open     mysql?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, HTTPOptions, Kerberos, NCP, NULL, NotesRPC, RTSPRequest, TLSSessionReq, WMSRequest: 
+|_    Host '192.168.49.79' is not allowed to connect to this MariaDB server
+4443/tcp  open     http          Apache httpd 2.4.43 ((Win64) OpenSSL/1.1.1g PHP/7.4.6)
+|_http-server-header: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6
+| http-title: Welcome to XAMPP
+|_Requested resource was http://192.168.79.53:4443/dashboard/
+|_https-redirect: ERROR: Script execution failed (use -d to debug)
+5040/tcp  open     unknown
+7680/tcp  filtered pando-pub
+8080/tcp  open     http          Apache httpd 2.4.43 ((Win64) OpenSSL/1.1.1g PHP/7.4.6)
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6
+| http-title: Welcome to XAMPP
+|_Requested resource was http://192.168.79.53:8080/dashboard/
+|_https-redirect: ERROR: Script execution failed (use -d to debug)
+49664/tcp open     msrpc         Microsoft Windows RPC
+49665/tcp open     msrpc         Microsoft Windows RPC
+49666/tcp open     msrpc         Microsoft Windows RPC
+49667/tcp open     msrpc         Microsoft Windows RPC
+49668/tcp open     msrpc         Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.80%I=7%D=8/13%Time=611714EE%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,4C,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.79'\x20is\x20not\x20all
+SF:owed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(GenericLin
+SF:es,4C,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.79'\x20is\x20not\x20all
+SF:owed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(HTTPOption
+SF:s,4C,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.79'\x20is\x20not\x20allo
+SF:wed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(RTSPRequest
+SF:,4C,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.79'\x20is\x20not\x20allow
+SF:ed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(DNSVersionBi
+SF:ndReqTCP,4C,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.79'\x20is\x20not\
+SF:x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(DNSS
+SF:tatusRequestTCP,4C,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.79'\x20is\
+SF:x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")
+SF:%r(TLSSessionReq,4C,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.79'\x20is
+SF:\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server"
+SF:)%r(Kerberos,4C,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.79'\x20is\x20
+SF:not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(
+SF:NCP,4C,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.79'\x20is\x20not\x20al
+SF:lowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(NotesRPC,
+SF:4C,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.79'\x20is\x20not\x20allowe
+SF:d\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(WMSRequest,4C
+SF:,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.79'\x20is\x20not\x20allowed\
+SF:x20to\x20connect\x20to\x20this\x20MariaDB\x20server");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-08-14T01:00:00
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Aug 13 21:00:37 2021 -- 1 IP address (1 host up) scanned in 200.97 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Fri Aug 13 21:31:44 2021 as: nmap --script=ssl-heartbleed -p 4443 -Pn -oA ssl-scan-4443 192.168.79.53
+Host: 192.168.79.53 ()	Status: Up
+Host: 192.168.79.53 ()	Ports: 4443/open/tcp//pharos///
+# Nmap done at Fri Aug 13 21:31:44 2021 -- 1 IP address (1 host up) scanned in 0.48 seconds

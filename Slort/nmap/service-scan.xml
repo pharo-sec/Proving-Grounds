@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug 13 20:57:16 2021 as: nmap -Pn -p 21,135,139,445,3306,4443,5040,7680,8080,49664,49665,49666,49667,49668 -sC -sV -oA nmap/service-scan 192.168.79.53 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p 21,135,139,445,3306,4443,5040,7680,8080,49664,49665,49666,49667,49668 -sC -sV -oA nmap/service-scan 192.168.79.53" start="1628902636" startstr="Fri Aug 13 20:57:16 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="14" services="21,135,139,445,3306,4443,5040,7680,8080,49664-49668"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1628902636" endtime="1628902837"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.79.53" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="FileZilla ftpd" version="0.9.41 beta" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:filezilla-project:filezilla_server:0.9.41_beta</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ftp-syst" output="&#xa;  SYST: UNIX emulated by FileZilla"><elem key="SYST">UNIX emulated by FileZilla</elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" servicefp="SF-Port3306-TCP:V=7.80%I=7%D=8/13%Time=611714EE%P=x86_64-pc-linux-gnu%r(NULL,4C,&quot;H\0\0\x01\xffj\x04Host\x20&apos;192\.168\.49\.79&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(GenericLines,4C,&quot;H\0\0\x01\xffj\x04Host\x20&apos;192\.168\.49\.79&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(HTTPOptions,4C,&quot;H\0\0\x01\xffj\x04Host\x20&apos;192\.168\.49\.79&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(RTSPRequest,4C,&quot;H\0\0\x01\xffj\x04Host\x20&apos;192\.168\.49\.79&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(DNSVersionBindReqTCP,4C,&quot;H\0\0\x01\xffj\x04Host\x20&apos;192\.168\.49\.79&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(DNSStatusRequestTCP,4C,&quot;H\0\0\x01\xffj\x04Host\x20&apos;192\.168\.49\.79&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(TLSSessionReq,4C,&quot;H\0\0\x01\xffj\x04Host\x20&apos;192\.168\.49\.79&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(Kerberos,4C,&quot;H\0\0\x01\xffj\x04Host\x20&apos;192\.168\.49\.79&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(NCP,4C,&quot;H\0\0\x01\xffj\x04Host\x20&apos;192\.168\.49\.79&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(NotesRPC,4C,&quot;H\0\0\x01\xffj\x04Host\x20&apos;192\.168\.49\.79&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(WMSRequest,4C,&quot;H\0\0\x01\xffj\x04Host\x20&apos;192\.168\.49\.79&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, HTTPOptions, Kerberos, NCP, NULL, NotesRPC, RTSPRequest, TLSSessionReq, WMSRequest: &#xa;    Host &apos;192.168.49.79&apos; is not allowed to connect to this MariaDB server"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, HTTPOptions, Kerberos, NCP, NULL, NotesRPC, RTSPRequest, TLSSessionReq, WMSRequest">&#xa;    Host &apos;192.168.49.79&apos; is not allowed to connect to this MariaDB server</elem>
+</script></port>
+<port protocol="tcp" portid="4443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.43" extrainfo="(Win64) OpenSSL/1.1.1g PHP/7.4.6" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.43</cpe></service><script id="http-server-header" output="Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6"><elem>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6</elem>
+</script><script id="http-title" output="Welcome to XAMPP&#xa;Requested resource was http://192.168.79.53:4443/dashboard/"><elem key="title">Welcome to XAMPP</elem>
+<elem key="redirect_url">http://192.168.79.53:4443/dashboard/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="5040"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7680"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="pando-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.43" extrainfo="(Win64) OpenSSL/1.1.1g PHP/7.4.6" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.43</cpe></service><script id="http-open-proxy" output="Proxy might be redirecting requests"/><script id="http-server-header" output="Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6"><elem>Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6</elem>
+</script><script id="http-title" output="Welcome to XAMPP&#xa;Requested resource was http://192.168.79.53:8080/dashboard/"><elem key="title">Welcome to XAMPP</elem>
+<elem key="redirect_url">http://192.168.79.53:8080/dashboard/</elem>
+</script><script id="https-redirect" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2021-08-14T01:00:00&#xa;  start_date: N/A"><elem key="date">2021-08-14T01:00:00</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><times srtt="61785" rttvar="4324" to="100000"/>
+</host>
+<runstats><finished time="1628902837" timestr="Fri Aug 13 21:00:37 2021" elapsed="200.97" summary="Nmap done at Fri Aug 13 21:00:37 2021; 1 IP address (1 host up) scanned in 200.97 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

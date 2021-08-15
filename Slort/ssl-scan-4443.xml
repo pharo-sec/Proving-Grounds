@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Aug 13 21:31:44 2021 as: nmap -&#45;script=ssl-heartbleed -p 4443 -Pn -oA ssl-scan-4443 192.168.79.53 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script=ssl-heartbleed -p 4443 -Pn -oA ssl-scan-4443 192.168.79.53" start="1628904704" startstr="Fri Aug 13 21:31:44 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="4443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1628904704" endtime="1628904704"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.79.53" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="4443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pharos" method="table" conf="3"/></port>
+</ports>
+<times srtt="59945" rttvar="59945" to="299725"/>
+</host>
+<runstats><finished time="1628904704" timestr="Fri Aug 13 21:31:44 2021" elapsed="0.48" summary="Nmap done at Fri Aug 13 21:31:44 2021; 1 IP address (1 host up) scanned in 0.48 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
