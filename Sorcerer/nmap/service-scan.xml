@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sat Aug 21 01:23:49 2021 as: nmap -p 22,80,111,2049,7742,8080,43329,45519,54375,55683 -Pn -sC -sV -oA nmap/service-scan 192.168.207.100 -->
+<nmaprun scanner="nmap" args="nmap -p 22,80,111,2049,7742,8080,43329,45519,54375,55683 -Pn -sC -sV -oA nmap/service-scan 192.168.207.100" start="1629523429" startstr="Sat Aug 21 01:23:49 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="10" services="22,80,111,2049,7742,8080,43329,45519,54375,55683"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1629523429" endtime="1629523444"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.207.100" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 81:2a:42:24:b5:90:a1:ce:9b:ac:e7:4e:1d:6d:b4:c6 (RSA)&#xa;  256 d0:73:2a:05:52:7f:89:09:37:76:e3:56:c8:ab:20:99 (ECDSA)&#xa;  256 3a:2d:de:33:b0:1e:f2:35:0f:8d:c8:d7:8f:f9:e0:0e (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">812a4224b590a1ce9bace74e1d6db4c6</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDBPvmCSxPzeOTu0xkhzki1lzln7PMGxSa5pj+POhWbtVKv4FPS1xWMPEoXGBP0mnepAfSnrPFIhT6VWp55a1Li5JZ6lhZnrXlCiGlmXACaBk27AHzN0/oyaOJ3K0i0QzU+WA0yrnYrxwUx9pOiHUHWeMqB2rR0s/qT/HVhIxsCcep3GcnlHZIq+/gDHE8vSE9S7NB0HveWjcK9dTfaGo1j43hexqvWu2HDoaivZASEVaLVuytRNuxncc42YG3+YVJdh0Rc7nzLJGYIZOMf/uL2cQuRnWyZ2cWYp18vKWqdGCx98sLGgvSgvyv8bKodTB3bEjBte67TjB+WH3PHLgwr</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">d0732a05527f89093776e356c8ab2099</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBORL+pLKq3Yihns7IHsQga4FwiEEphsd69rkOSoXG9LpXW1EmBzwAuZsPsFMPybf/wD/1xv3WwXI18OW7KPH5zE=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">3a2dde33b01ef2350f8dc8d78ff9e00e</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIM+BGOga+rG532zlRWjwPOXuZpULndpYclKxi8sF5n8B</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2,3,4        111/tcp   rpcbind&#xa;  100000  2,3,4        111/udp   rpcbind&#xa;  100003  3           2049/udp   nfs&#xa;  100003  3,4         2049/tcp   nfs&#xa;  100005  1,2,3      45519/tcp   mountd&#xa;  100005  1,2,3      50443/udp   mountd&#xa;  100021  1,3,4      43329/tcp   nlockmgr&#xa;  100021  1,3,4      50121/udp   nlockmgr&#xa;  100227  3           2049/tcp   nfs_acl&#xa;  100227  3           2049/udp   nfs_acl&#xa;"><table key="100003">
+<table key="udp">
+<table key="version">
+<elem>3</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">2049</elem>
+</table>
+</table>
+<table key="100005">
+<table key="tcp">
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">45519</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">50443</elem>
+</table>
+</table>
+<table key="100021">
+<table key="tcp">
+<table key="version">
+<elem>1</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">43329</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>1</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">50121</elem>
+</table>
+</table>
+<table key="100227">
+<table key="udp">
+<table key="version">
+<elem>3</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<table key="version">
+<elem>3</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">2049</elem>
+</table>
+</table>
+<table key="100000">
+<table key="tcp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">111</elem>
+</table>
+<table key="local">
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">/run/rpcbind.sock</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">111</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="nfs_acl" version="3" extrainfo="RPC #100227" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="7742"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-title" output="SORCERER"><elem key="title">SORCERER</elem>
+</script></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache Tomcat" version="7.0.4" method="probed" conf="10"><cpe>cpe:/a:apache:tomcat:7.0.4</cpe></service><script id="http-favicon" output="Apache Tomcat"/><script id="http-title" output="Apache Tomcat/7.0.4"><elem key="title">Apache Tomcat/7.0.4</elem>
+</script></port>
+<port protocol="tcp" portid="43329"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="nlockmgr" version="1-4" extrainfo="RPC #100021" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="45519"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mountd" version="1-3" extrainfo="RPC #100005" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="54375"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mountd" version="1-3" extrainfo="RPC #100005" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="55683"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mountd" version="1-3" extrainfo="RPC #100005" method="probed" conf="10"/></port>
+</ports>
+<times srtt="58551" rttvar="8065" to="100000"/>
+</host>
+<runstats><finished time="1629523444" timestr="Sat Aug 21 01:24:04 2021" summary="Nmap done at Sat Aug 21 01:24:04 2021; 1 IP address (1 host up) scanned in 15.63 seconds" elapsed="15.63" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

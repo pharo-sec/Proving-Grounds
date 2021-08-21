@@ -1,0 +1,17 @@
+# Nmap 7.91 scan initiated Sat Aug 21 01:19:36 2021 as: nmap -p- -Pn -oA nmap/full-port 192.168.207.100
+Nmap scan report for 192.168.207.100
+Host is up (0.059s latency).
+Not shown: 65525 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+111/tcp   open  rpcbind
+2049/tcp  open  nfs
+7742/tcp  open  msss
+8080/tcp  open  http-proxy
+43329/tcp open  unknown
+45519/tcp open  unknown
+54375/tcp open  unknown
+55683/tcp open  unknown
+
+# Nmap done at Sat Aug 21 01:20:07 2021 -- 1 IP address (1 host up) scanned in 30.77 seconds

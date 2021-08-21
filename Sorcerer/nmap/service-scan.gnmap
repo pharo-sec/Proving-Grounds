@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Sat Aug 21 01:23:49 2021 as: nmap -p 22,80,111,2049,7742,8080,43329,45519,54375,55683 -Pn -sC -sV -oA nmap/service-scan 192.168.207.100
+Host: 192.168.207.100 ()	Status: Up
+Host: 192.168.207.100 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)/, 80/open/tcp//http//nginx/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 2049/open/tcp//nfs_acl//3 (RPC #100227)/, 7742/open/tcp//http//nginx/, 8080/open/tcp//http//Apache Tomcat 7.0.4/, 43329/open/tcp//nlockmgr//1-4 (RPC #100021)/, 45519/open/tcp//mountd//1-3 (RPC #100005)/, 54375/open/tcp//mountd//1-3 (RPC #100005)/, 55683/open/tcp//mountd//1-3 (RPC #100005)/
+# Nmap done at Sat Aug 21 01:24:04 2021 -- 1 IP address (1 host up) scanned in 15.63 seconds
