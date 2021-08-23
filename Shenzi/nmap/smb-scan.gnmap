@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Sun Aug 22 14:00:04 2021 as: nmap -p 139,445 --script=smb-vuln* -oA nmap/smb-scan 192.168.249.55
+Host: 192.168.249.55 ()	Status: Up
+Host: 192.168.249.55 ()	Ports: 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///
+# Nmap done at Sun Aug 22 14:00:16 2021 -- 1 IP address (1 host up) scanned in 12.63 seconds
