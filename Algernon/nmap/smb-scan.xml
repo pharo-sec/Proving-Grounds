@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Mon Aug 23 20:59:12 2021 as: nmap -Pn -p 139,445 -&#45;script=smb-vuln* -oA nmap/smb-scan 192.168.249.65 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p 139,445 -&#45;script=smb-vuln* -oA nmap/smb-scan 192.168.249.65" start="1629766752" startstr="Mon Aug 23 20:59:12 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="139,445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1629766752" endtime="1629766764"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.249.65" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: Failed to receive bytes: ERROR">false</script></hostscript><times srtt="56255" rttvar="42213" to="225107"/>
+</host>
+<runstats><finished time="1629766764" timestr="Mon Aug 23 20:59:24 2021" summary="Nmap done at Mon Aug 23 20:59:24 2021; 1 IP address (1 host up) scanned in 12.46 seconds" elapsed="12.46" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

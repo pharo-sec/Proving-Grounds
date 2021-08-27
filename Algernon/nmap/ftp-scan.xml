@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Thu Aug 26 22:14:00 2021 as: nmap -&#45;script=ftp-anon,ftp-bounce,ftp-libopie,ftp-proftpd-backdoor,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221,tftp-enum -p 21 -oA nmap/ftp-scan 192.168.205.65 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script=ftp-anon,ftp-bounce,ftp-libopie,ftp-proftpd-backdoor,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221,tftp-enum -p 21 -oA nmap/ftp-scan 192.168.205.65" start="1630030440" startstr="Thu Aug 26 22:14:00 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="21"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="192.168.205.65" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1630030440" endtime="1630030471"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.205.65" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" method="table" conf="3"/><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;Can&apos;t get directory listing: TIMEOUT"/></port>
+</ports>
+<times srtt="54233" rttvar="41525" to="220333"/>
+</host>
+<runstats><finished time="1630030471" timestr="Thu Aug 26 22:14:31 2021" summary="Nmap done at Thu Aug 26 22:14:31 2021; 1 IP address (1 host up) scanned in 30.87 seconds" elapsed="30.87" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

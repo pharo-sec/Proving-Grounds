@@ -1,0 +1,1 @@
+# Nmap 7.91 scan initiated Thu Aug 26 22:13:12 2021 as: nmap -sU -sV -p- -oA nmap/udp-scan 192.168.205.65

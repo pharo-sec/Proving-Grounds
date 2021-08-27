@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Mon Aug 23 20:35:31 2021 as: nmap -p- -Pn -oA nmap/full-port 192.168.249.65 -->
+<nmaprun scanner="nmap" args="nmap -p- -Pn -oA nmap/full-port 192.168.249.65" start="1629765331" startstr="Mon Aug 23 20:35:31 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1629765331" endtime="1629765437"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.249.65" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65527">
+<extrareasons reason="no-responses" count="65527"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pando-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9998"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="distinct32" method="table" conf="3"/></port>
+<port protocol="tcp" portid="17001"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+</ports>
+<times srtt="58321" rttvar="2609" to="100000"/>
+</host>
+<runstats><finished time="1629765437" timestr="Mon Aug 23 20:37:17 2021" summary="Nmap done at Mon Aug 23 20:37:17 2021; 1 IP address (1 host up) scanned in 105.79 seconds" elapsed="105.79" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

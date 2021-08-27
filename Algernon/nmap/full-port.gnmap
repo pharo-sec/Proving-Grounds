@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Mon Aug 23 20:35:31 2021 as: nmap -p- -Pn -oA nmap/full-port 192.168.249.65
+Host: 192.168.249.65 ()	Status: Up
+Host: 192.168.249.65 ()	Ports: 21/open/tcp//ftp///, 80/open/tcp//http///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 7680/open/tcp//pando-pub///, 9998/open/tcp//distinct32///, 17001/open/tcp/////	Ignored State: filtered (65527)
+# Nmap done at Mon Aug 23 20:37:17 2021 -- 1 IP address (1 host up) scanned in 105.79 seconds

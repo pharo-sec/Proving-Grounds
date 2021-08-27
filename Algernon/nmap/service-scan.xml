@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Mon Aug 23 20:42:21 2021 as: nmap -p 21,80,135,139,445,7680,9998,17001 -Pn -sC -sV -oA nmap/service-scan 192.168.249.65 -->
+<nmaprun scanner="nmap" args="nmap -p 21,80,135,139,445,7680,9998,17001 -Pn -sC -sV -oA nmap/service-scan 192.168.249.65" start="1629765741" startstr="Mon Aug 23 20:42:21 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="8" services="21,80,135,139,445,7680,9998,17001"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1629765741" endtime="1629765803"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.249.65" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="Microsoft ftpd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:ftp_service</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;Can&apos;t get directory listing: TIMEOUT"/><script id="ftp-syst" output="&#xa;  SYST: Windows_NT"><elem key="SYST">Windows_NT</elem>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_server:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Potentially risky methods: TRACE"><table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="IIS Windows"><elem key="title">IIS Windows</elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7680"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="pando-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9998"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_server:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html; charset=utf-8).&#xa;Requested resource was /interface/root"><elem key="title"></elem>
+<elem key="redirect_url">/interface/root</elem>
+</script><script id="uptime-agent-info" output="HTTP/1.1 400 Bad Request&#xd;&#xa;Content-Type: text/html; charset=us-ascii&#xd;&#xa;Server: Microsoft-HTTPAPI/2.0&#xd;&#xa;Date: Tue, 24 Aug 2021 00:42:45 GMT&#xd;&#xa;Connection: close&#xd;&#xa;Content-Length: 326&#xd;&#xa;&#xd;&#xa;&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;&quot;http://www.w3.org/TR/html4/strict.dtd&quot;&gt;&#xd;&#xa;&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Bad Request&lt;/TITLE&gt;&#xd;&#xa;&lt;META HTTP-EQUIV=&quot;Content-Type&quot; Content=&quot;text/html; charset=us-ascii&quot;&gt;&lt;/HEAD&gt;&#xd;&#xa;&lt;BODY&gt;&lt;h2&gt;Bad Request - Invalid Verb&lt;/h2&gt;&#xd;&#xa;&lt;hr&gt;&lt;p&gt;HTTP Error 400. The request verb is invalid.&lt;/p&gt;&#xd;&#xa;&lt;/BODY&gt;&lt;/HTML&gt;&#xd;&#xa;"/></port>
+<port protocol="tcp" portid="17001"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="remoting" product="MS .NET Remoting services" method="probed" conf="10"><cpe>cpe:/a:microsoft:.net_framework</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2021-08-24T00:42:44&#xa;  start_date: N/A"><elem key="date">2021-08-24T00:42:44</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><times srtt="55328" rttvar="11903" to="102940"/>
+</host>
+<runstats><finished time="1629765803" timestr="Mon Aug 23 20:43:23 2021" summary="Nmap done at Mon Aug 23 20:43:23 2021; 1 IP address (1 host up) scanned in 61.90 seconds" elapsed="61.90" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
