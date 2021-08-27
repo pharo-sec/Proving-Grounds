@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Fri Aug 27 00:14:04 2021 as: nmap -p- -Pn -oA nmap/full-port 192.168.205.69
+Host: 192.168.205.69 ()	Status: Up
+Host: 192.168.205.69 ()	Ports: 22/open/tcp//ssh///, 53/closed/tcp//domain///, 80/open/tcp//http///, 6379/open/tcp//redis///, 8080/open/tcp//http-proxy///, 27017/open/tcp//mongod///	Ignored State: filtered (65529)
+# Nmap done at Fri Aug 27 00:15:50 2021 -- 1 IP address (1 host up) scanned in 105.92 seconds
