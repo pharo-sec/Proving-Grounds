@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Fri Aug 27 08:19:03 2021 as: nmap -p- -Pn -oA nmap/full-port 192.168.132.127 -->
+<nmaprun scanner="nmap" args="nmap -p- -Pn -oA nmap/full-port 192.168.132.127" start="1630066743" startstr="Fri Aug 27 08:19:03 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1630066743" endtime="1630066850"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.132.127" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65518">
+<extrareasons reason="no-responses" count="65518"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5040"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pando-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="30021"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="33033"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="44330"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="45332"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="45443"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+</ports>
+<times srtt="56858" rttvar="3131" to="100000"/>
+</host>
+<runstats><finished time="1630066850" timestr="Fri Aug 27 08:20:50 2021" summary="Nmap done at Fri Aug 27 08:20:50 2021; 1 IP address (1 host up) scanned in 106.73 seconds" elapsed="106.73" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
