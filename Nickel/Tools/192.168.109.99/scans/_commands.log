@@ -1,0 +1,70 @@
+nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/_top_20_udp_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/_top_20_udp_nmap.xml" 192.168.109.99
+
+nmap -vv --reason -Pn -sV -sC --version-all -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/_quick_tcp_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/_quick_tcp_nmap.xml" 192.168.109.99
+
+nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/_full_tcp_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/_full_tcp_nmap.xml" 192.168.109.99
+
+nmap -vv --reason -Pn -sV -sC --version-all -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/_quick_tcp_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/_quick_tcp_nmap.xml" 192.168.109.99
+
+nmap -vv --reason -Pn -A --osscan-guess --version-all -p- -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/_full_tcp_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/_full_tcp_nmap.xml" 192.168.109.99
+
+nmap -vv --reason -Pn -sU -A --top-ports=20 --version-all -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/_top_20_udp_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/_top_20_udp_nmap.xml" 192.168.109.99
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 192.168.109.99:21 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_21_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 21 --script="banner,(ftp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_21_ftp_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/tcp_21_ftp_nmap.xml" 192.168.109.99
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 192.168.109.99:22 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_22_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 22 --script="banner,ssh2-enum-algos,ssh-hostkey,ssh-auth-methods" -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_22_ssh_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/tcp_22_ssh_nmap.xml" 192.168.109.99
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 192.168.109.99:135 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_135_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 135 --script="banner,msrpc-enum,rpc-grind,rpcinfo" -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_135_rpc_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/tcp_135_rpc_nmap.xml" 192.168.109.99
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 192.168.109.99:139 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_139_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 139 --script="banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" --script-args="unsafe=1" -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_139_smb_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/tcp_139_smb_nmap.xml" 192.168.109.99
+
+enum4linux -a -M -l -d 192.168.109.99 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/enum4linux.txt"
+
+smbclient -L\\ -N -I 192.168.109.99 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/smbclient.txt"
+
+smbmap -H 192.168.109.99 -P 139 2>&1 | tee -a "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/smbmap-share-permissions.txt"; smbmap -u null -p "" -H 192.168.109.99 -P 139 2>&1 | tee -a "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/smbmap-share-permissions.txt"
+
+smbmap -H 192.168.109.99 -P 139 -R 2>&1 | tee -a "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/smbmap-list-contents.txt"; smbmap -u null -p "" -H 192.168.109.99 -P 139 -R 2>&1 | tee -a "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/smbmap-list-contents.txt"
+
+smbmap -H 192.168.109.99 -P 139 -x "ipconfig /all" 2>&1 | tee -a "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/smbmap-execute-command.txt"; smbmap -u null -p "" -H 192.168.109.99 -P 139 -x "ipconfig /all" 2>&1 | tee -a "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/smbmap-execute-command.txt"
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 192.168.109.99:3389 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_3389_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 3389 --script="banner,(rdp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_3389_rdp_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/tcp_3389_rdp_nmap.xml" 192.168.109.99
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 192.168.109.99:8089 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_8089_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 8089 --script="banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_8089_http_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/tcp_8089_http_nmap.xml" 192.168.109.99
+
+curl -sSik http://192.168.109.99:8089/ -m 10 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_8089_http_index.html"
+
+curl -sSik http://192.168.109.99:8089/robots.txt -m 10 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_8089_http_robots.txt"
+
+if hash wkhtmltoimage 2> /dev/null; then wkhtmltoimage --format png http://192.168.109.99:8089/ /home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_8089_http_screenshot.png; fi
+
+whatweb --color=never --no-errors -a 3 -v http://192.168.109.99:8089 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_8089_http_whatweb.txt"
+
+feroxbuster -u http://192.168.109.99:8089 -t 10 -w /usr/share/seclists/Discovery/Web-Content/common.txt -x "txt,html,php,asp,aspx,jsp" -v -k -n -o /home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_8089_http_feroxbuster.txt
+
+if [ "False" == "True" ]; then sslscan --show-certificate --no-colour 192.168.109.99:33333 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_33333_sslscan.txt"; fi
+
+nmap -vv --reason -Pn -sV -p 33333 --script="banner,(http* or ssl*) and not (brute or broadcast or dos or external or http-slowloris* or fuzzer)" -oN "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_33333_http_nmap.txt" -oX "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/xml/tcp_33333_http_nmap.xml" 192.168.109.99
+
+curl -sSik http://192.168.109.99:33333/ -m 10 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_33333_http_index.html"
+
+curl -sSik http://192.168.109.99:33333/robots.txt -m 10 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_33333_http_robots.txt"
+
+if hash wkhtmltoimage 2> /dev/null; then wkhtmltoimage --format png http://192.168.109.99:33333/ /home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_33333_http_screenshot.png; fi
+
+whatweb --color=never --no-errors -a 3 -v http://192.168.109.99:33333 2>&1 | tee "/home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_33333_http_whatweb.txt"
+
+feroxbuster -u http://192.168.109.99:33333 -t 10 -w /usr/share/seclists/Discovery/Web-Content/common.txt -x "txt,html,php,asp,aspx,jsp" -v -k -n -o /home/pharo/Proving-Grounds/Nickel/Tools/192.168.109.99/scans/tcp_33333_http_feroxbuster.txt
+

@@ -1,0 +1,14 @@
+# Nmap 7.91 scan initiated Tue Aug 31 21:54:26 2021 as: nmap -Pn -p- -oA nmap/full-port 192.168.159.99
+Nmap scan report for 192.168.159.99
+Host is up (0.057s latency).
+Not shown: 65528 filtered ports
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+3389/tcp  open  ms-wbt-server
+8089/tcp  open  unknown
+33333/tcp open  dgi-serv
+
+# Nmap done at Tue Aug 31 21:56:12 2021 -- 1 IP address (1 host up) scanned in 105.98 seconds

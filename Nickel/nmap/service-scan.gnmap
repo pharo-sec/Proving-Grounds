@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Tue Aug 31 21:57:19 2021 as: nmap -Pn -p 21,22,135,139,3389,8089,33333 -sV -sC -T4 -oA nmap/service-scan 192.168.159.99
+Host: 192.168.159.99 ()	Status: Up
+Host: 192.168.159.99 ()	Ports: 21/open/tcp//ftp//FileZilla ftpd/, 22/open/tcp//ssh//OpenSSH for_Windows_8.1 (protocol 2.0)/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 3389/open/tcp//ms-wbt-server//Microsoft Terminal Services/, 8089/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/, 33333/open/tcp//http//Microsoft HTTPAPI httpd 2.0 (SSDP|UPnP)/
+# Nmap done at Tue Aug 31 21:58:43 2021 -- 1 IP address (1 host up) scanned in 83.30 seconds

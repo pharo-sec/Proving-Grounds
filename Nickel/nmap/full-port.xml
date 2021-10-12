@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Tue Aug 31 21:54:26 2021 as: nmap -Pn -p- -oA nmap/full-port 192.168.159.99 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p- -oA nmap/full-port 192.168.159.99" start="1630461266" startstr="Tue Aug 31 21:54:26 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1630461266" endtime="1630461372"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.159.99" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65528">
+<extrareasons reason="no-responses" count="65528"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8089"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="33333"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="dgi-serv" method="table" conf="3"/></port>
+</ports>
+<times srtt="57249" rttvar="3148" to="100000"/>
+</host>
+<runstats><finished time="1630461372" timestr="Tue Aug 31 21:56:12 2021" summary="Nmap done at Tue Aug 31 21:56:12 2021; 1 IP address (1 host up) scanned in 105.98 seconds" elapsed="105.98" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
