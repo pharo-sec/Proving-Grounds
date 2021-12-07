@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Sun Nov 28 22:37:34 2021 as: nmap -Pn -p- -oA nmap/full-port --open 192.168.189.39
+Host: 192.168.189.39 ()	Status: Up
+Host: 192.168.189.39 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 110/open/tcp//pop3///, 139/open/tcp//netbios-ssn///, 143/open/tcp//imap///, 445/open/tcp//microsoft-ds///, 993/open/tcp//imaps///, 995/open/tcp//pop3s///
+# Nmap done at Sun Nov 28 22:37:56 2021 -- 1 IP address (1 host up) scanned in 22.51 seconds

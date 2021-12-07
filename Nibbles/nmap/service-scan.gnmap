@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Fri Nov 26 11:41:36 2021 as: nmap -Pn -p 21,22,80,5437 -sC -sV -oA nmap/service-scan 192.168.82.47
+Host: 192.168.82.47 ()	Status: Up
+Host: 192.168.82.47 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.38 ((Debian))/, 5437/open/tcp//postgresql//PostgreSQL DB 11.3 - 11.7/
+# Nmap done at Fri Nov 26 11:41:48 2021 -- 1 IP address (1 host up) scanned in 12.13 seconds

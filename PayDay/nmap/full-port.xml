@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sun Nov 28 22:37:34 2021 as: nmap -Pn -p- -oA nmap/full-port -&#45;open 192.168.189.39 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p- -oA nmap/full-port -&#45;open 192.168.189.39" start="1638157054" startstr="Sun Nov 28 22:37:34 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1638157054" endtime="1638157076"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.189.39" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65351">
+<extrareasons reason="conn-refused" count="65351"/>
+</extraports>
+<extraports state="filtered" count="176">
+<extrareasons reason="no-responses" count="176"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imaps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3s" method="table" conf="3"/></port>
+</ports>
+<times srtt="63911" rttvar="3552" to="100000"/>
+</host>
+<runstats><finished time="1638157076" timestr="Sun Nov 28 22:37:56 2021" summary="Nmap done at Sun Nov 28 22:37:56 2021; 1 IP address (1 host up) scanned in 22.51 seconds" elapsed="22.51" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

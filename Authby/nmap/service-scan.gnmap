@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Sat Nov 27 13:25:52 2021 as: nmap -Pn -sC -sV -p 21,242,3145,3389 -oA nmap/service-scan 192.168.63.46
+Host: 192.168.63.46 ()	Status: Up
+Host: 192.168.63.46 ()	Ports: 21/open/tcp//ftp//zFTPServer 6.0 build 2011-10-17/, 242/open/tcp//http//Apache httpd 2.2.21 ((Win32) PHP|5.3.8)/, 3145/open/tcp//zftp-admin//zFTPServer admin/, 3389/open/tcp//ssl|ms-wbt-server?///
+# Nmap done at Sat Nov 27 13:26:24 2021 -- 1 IP address (1 host up) scanned in 32.16 seconds

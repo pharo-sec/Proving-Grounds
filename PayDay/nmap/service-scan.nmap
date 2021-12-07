@@ -1,0 +1,90 @@
+# Nmap 7.91 scan initiated Sun Nov 28 22:40:11 2021 as: nmap -Pn -p 22,80,110,139,143,445,993,995 -sC -sV -oA nmap/service-scan 192.168.189.39
+Nmap scan report for 192.168.189.39
+Host is up (0.057s latency).
+
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 4.6p1 Debian 5build1 (protocol 2.0)
+| ssh-hostkey: 
+|   1024 f3:6e:87:04:ea:2d:b3:60:ff:42:ad:26:67:17:94:d5 (DSA)
+|_  2048 bb:03:ce:ed:13:f1:9a:9e:36:03:e2:af:ca:b2:35:04 (RSA)
+80/tcp  open  http        Apache httpd 2.2.4 ((Ubuntu) PHP/5.2.3-1ubuntu6)
+|_http-server-header: Apache/2.2.4 (Ubuntu) PHP/5.2.3-1ubuntu6
+|_http-title: CS-Cart. Powerful PHP shopping cart software
+110/tcp open  pop3        Dovecot pop3d
+|_pop3-capabilities: SASL RESP-CODES PIPELINING STLS TOP UIDL CAPA
+| ssl-cert: Subject: commonName=ubuntu01/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX
+| Not valid before: 2008-04-25T02:02:48
+|_Not valid after:  2008-05-25T02:02:48
+|_ssl-date: 2021-11-29T03:40:39+00:00; +8s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_RC2_128_CBC_WITH_MD5
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: MSHOME)
+143/tcp open  imap        Dovecot imapd
+|_imap-capabilities: LITERAL+ NAMESPACE Capability IMAP4rev1 completed OK CHILDREN SASL-IR THREAD=REFERENCES UNSELECT MULTIAPPEND LOGINDISABLEDA0001 STARTTLS LOGIN-REFERRALS SORT IDLE
+| ssl-cert: Subject: commonName=ubuntu01/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX
+| Not valid before: 2008-04-25T02:02:48
+|_Not valid after:  2008-05-25T02:02:48
+|_ssl-date: 2021-11-29T03:40:40+00:00; +8s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_RC2_128_CBC_WITH_MD5
+445/tcp open  netbios-ssn Samba smbd 3.0.26a (workgroup: MSHOME)
+993/tcp open  ssl/imap    Dovecot imapd
+|_imap-capabilities: LITERAL+ NAMESPACE Capability IMAP4rev1 completed CHILDREN SASL-IR THREAD=REFERENCES UNSELECT MULTIAPPEND OK AUTH=PLAINA0001 LOGIN-REFERRALS SORT IDLE
+| ssl-cert: Subject: commonName=ubuntu01/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX
+| Not valid before: 2008-04-25T02:02:48
+|_Not valid after:  2008-05-25T02:02:48
+|_ssl-date: 2021-11-29T03:40:39+00:00; +8s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_RC2_128_CBC_WITH_MD5
+995/tcp open  ssl/pop3    Dovecot pop3d
+|_pop3-capabilities: SASL(PLAIN) RESP-CODES USER PIPELINING TOP UIDL CAPA
+| ssl-cert: Subject: commonName=ubuntu01/organizationName=OCOSA/stateOrProvinceName=There is no such thing outside US/countryName=XX
+| Not valid before: 2008-04-25T02:02:48
+|_Not valid after:  2008-05-25T02:02:48
+|_ssl-date: 2021-11-29T03:40:40+00:00; +8s from scanner time.
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_DES_192_EDE3_CBC_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_RC4_128_WITH_MD5
+|_    SSL2_RC2_128_CBC_WITH_MD5
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 50m08s, deviation: 2h02m29s, median: 7s
+| smb-os-discovery: 
+|   OS: Unix (Samba 3.0.26a)
+|   Computer name: payday
+|   NetBIOS computer name: 
+|   Domain name: 
+|   FQDN: payday
+|_  System time: 2021-11-28T22:40:34-05:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Nov 28 22:40:33 2021 -- 1 IP address (1 host up) scanned in 21.83 seconds

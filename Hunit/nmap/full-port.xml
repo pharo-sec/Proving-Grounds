@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sun Oct 17 19:37:25 2021 as: nmap -p- -Pn -oA nmap/full-port -&#45;open 192.168.168.125 -->
+<nmaprun scanner="nmap" args="nmap -p- -Pn -oA nmap/full-port -&#45;open 192.168.168.125" start="1634513845" startstr="Sun Oct 17 19:37:25 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1634513845" endtime="1634513953"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.168.125" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65525">
+<extrareasons reason="no-responses" count="65525"/>
+</extraports>
+<extraports state="closed" count="6">
+<extrareasons reason="conn-refused" count="6"/>
+</extraports>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="12445"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="18030"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="43022"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+</ports>
+<times srtt="54955" rttvar="2546" to="100000"/>
+</host>
+<runstats><finished time="1634513953" timestr="Sun Oct 17 19:39:13 2021" summary="Nmap done at Sun Oct 17 19:39:13 2021; 1 IP address (1 host up) scanned in 107.60 seconds" elapsed="107.60" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

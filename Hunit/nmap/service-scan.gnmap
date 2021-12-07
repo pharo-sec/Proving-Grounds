@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Tue Oct 12 19:15:25 2021 as: nmap -Pn -p 8080,12445,18030,43022 -sC -sV -oA nmap/service-scan 192.168.133.125
+Host: 192.168.133.125 ()	Status: Up
+Host: 192.168.133.125 ()	Ports: 8080/open/tcp//http-proxy///, 12445/open/tcp//netbios-ssn//Samba smbd 4.6.2/, 18030/open/tcp//http//Apache httpd 2.4.46 ((Unix))/, 43022/open/tcp//ssh//OpenSSH 8.4 (protocol 2.0)/
+# Nmap done at Tue Oct 12 19:16:24 2021 -- 1 IP address (1 host up) scanned in 58.74 seconds

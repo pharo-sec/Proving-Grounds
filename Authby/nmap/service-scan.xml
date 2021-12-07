@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sat Nov 27 13:25:52 2021 as: nmap -Pn -sC -sV -p 21,242,3145,3389 -oA nmap/service-scan 192.168.63.46 -->
+<nmaprun scanner="nmap" args="nmap -Pn -sC -sV -p 21,242,3145,3389 -oA nmap/service-scan 192.168.63.46" start="1638037552" startstr="Sat Nov 27 13:25:52 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="21,242,3145,3389"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1638037552" endtime="1638037584"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.63.46" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="zFTPServer" version="6.0 build 2011-10-17" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:vaestgoeta-data:zftpserver:6.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;total 9680&#xa;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;   1 root     root      5610496 Oct 18  2011 zFTPServer.exe&#xa;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;   1 root     root           25 Feb 10  2011 UninstallService.bat&#xa;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;   1 root     root      4284928 Oct 18  2011 Uninstall.exe&#xa;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;   1 root     root           17 Aug 13  2011 StopService.bat&#xa;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;   1 root     root           18 Aug 13  2011 StartService.bat&#xa;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;   1 root     root         8736 Nov 09  2011 Settings.ini&#xa;dr-xr-xr-x   1 root     root          512 Nov 28 02:18 log&#xa;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;   1 root     root         2275 Aug 09  2011 LICENSE.htm&#xa;-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;   1 root     root           23 Feb 10  2011 InstallService.bat&#xa;dr-xr-xr-x   1 root     root          512 Nov 08  2011 extensions&#xa;dr-xr-xr-x   1 root     root          512 Nov 08  2011 certificates&#xa;dr-xr-xr-x   1 root     root          512 Sep 22 02:21 accounts"/></port>
+<port protocol="tcp" portid="242"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.21" extrainfo="(Win32) PHP/5.3.8" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.21</cpe></service><script id="http-auth" output="&#xa;HTTP/1.1 401 Authorization Required&#xd;&#xa;  Basic realm=Qui e nuce nuculeum esse volt, frangit nucem!&#xa;"><table>
+<elem key="scheme">Basic</elem>
+<table key="params">
+<elem key="realm">Qui e nuce nuculeum esse volt, frangit nucem!</elem>
+</table>
+</table>
+</script><script id="http-server-header" output="Apache/2.2.21 (Win32) PHP/5.3.8"><elem>Apache/2.2.21 (Win32) PHP/5.3.8</elem>
+</script><script id="http-title" output="401 Authorization Required"><elem key="title">401 Authorization Required</elem>
+</script></port>
+<port protocol="tcp" portid="3145"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="zftp-admin" product="zFTPServer admin" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:vaestgoeta-data:zftpserver</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" tunnel="ssl" method="table" conf="3"/><script id="rdp-ntlm-info" output="&#xa;  Target_Name: LIVDA&#xa;  NetBIOS_Domain_Name: LIVDA&#xa;  NetBIOS_Computer_Name: LIVDA&#xa;  DNS_Domain_Name: LIVDA&#xa;  DNS_Computer_Name: LIVDA&#xa;  Product_Version: 6.0.6001&#xa;  System_Time: 2021-11-27T18:26:20+00:00"><elem key="Target_Name">LIVDA</elem>
+<elem key="NetBIOS_Domain_Name">LIVDA</elem>
+<elem key="NetBIOS_Computer_Name">LIVDA</elem>
+<elem key="DNS_Domain_Name">LIVDA</elem>
+<elem key="DNS_Computer_Name">LIVDA</elem>
+<elem key="Product_Version">6.0.6001</elem>
+<elem key="System_Time">2021-11-27T18:26:20+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=LIVDA&#xa;Not valid before: 2021-09-20T18:21:50&#xa;Not valid after:  2022-03-22T18:21:50"><table key="subject">
+<elem key="commonName">LIVDA</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">LIVDA</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">B6E022B30B49E37E2B46C1441A4E4635A216F4C02C0115E8E0A6EF2E644F28B62E5DC01373323552C9C8BE57D1F7A61593350C6744CDE264ECA30902940482D8F32EEFFDF2422096C4B5F019CFF92EBA44EF9BEE166D7CA5A3D81987E3B8C9D3AF9362D2F435F659C658D29BA52FC467AABC3C5E4087A0B09CB82556D72D3FD8B0DBD7B00A0A1C9885FCF130CF436A34EF9BE96C4FD6C0661DFC68EB548485F7DC0576E0682725C646CCA05BE13A0A43A7F03349342708125B3F6562C4A4B60A19A29EA0FD7994C019209DE9572FCB09A7518E4808DA353C984567B9489BF490DDFD42A7A2DE3C6850691A92D59437089EAE888AE08B2116D3EDB69377E34269</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-09-20T18:21:50</elem>
+<elem key="notAfter">2022-03-22T18:21:50</elem>
+</table>
+<elem key="md5">e12c49d41911b78d19c09d28c97d6b42</elem>
+<elem key="sha1">5ae8a0b4da89f6453695d44cdba64b6066390f8e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICzjCCAbagAwIBAgIQ5kupcnkYQapPPzwZtiPgpTANBgkqhkiG9w0BAQUFADAQ&#xa;MQ4wDAYDVQQDEwVMSVZEQTAeFw0yMTA5MjAxODIxNTBaFw0yMjAzMjIxODIxNTBa&#xa;MBAxDjAMBgNVBAMTBUxJVkRBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC&#xa;AQEAtuAiswtJ434rRsFEGk5GNaIW9MAsARXo4KbvLmRPKLYuXcATczI1UsnIvlfR&#xa;96YVkzUMZ0TN4mTsowkClASC2PMu7/3yQiCWxLXwGc/5LrpE75vuFm18paPYGYfj&#xa;uMnTr5Ni0vQ19lnGWNKbpS/EZ6q8PF5Ah6CwnLglVtctP9iw29ewCgocmIX88TDP&#xa;Q2o075vpbE/WwGYd/GjrVISF99wFduBoJyXGRsygW+E6CkOn8DNJNCcIEls/ZWLE&#xa;pLYKGaKeoP15lMAZIJ3pVy/LCadRjkgI2jU8mEVnuUib9JDd/UKnot48aFBpGpLV&#xa;lDcInq6IiuCLIRbT7baTd+NCaQIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcD&#xa;ATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQEFBQADggEBAKzQlGEdwBuZKqztB9Gk&#xa;0BziT/bno+3BnqL3Nvj/pdaJB6yid21LD2jtn2832OmfMGyf/sQ0mYSCXyh188N7&#xa;kP5kCYRajo1sbexng3yxcb25xgsh8/yrtgHCYkVRj95CrZr38BEJ0RqNUtLDVFSE&#xa;56iSauzNw2Bzs6Wl65K+/iXwR2yceMZVsfYdVTDQEVE9hzZoi41Cg4zrz+FsRTSI&#xa;8/cRnKx9xR7dG4keEb0hNLs3ZOo2y4hOfwKuZ5McpSebgM9JOm2l6PQYhmFmOlDL&#xa;wmEsVrXvJVnNzR3M8IdQq7HUU/YwpfI5+ymYm6NOPsvdlv3LkQAP4N3yw7ERwObe&#xa;qj8=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2021-11-27T18:26:24+00:00; +1s from scanner time."><elem key="delta">1.0</elem>
+<elem key="date">2021-11-27T18:26:24+00:00</elem>
+</script></port>
+</ports>
+<times srtt="264499" rttvar="396031" to="1848623"/>
+</host>
+<runstats><finished time="1638037584" timestr="Sat Nov 27 13:26:24 2021" summary="Nmap done at Sat Nov 27 13:26:24 2021; 1 IP address (1 host up) scanned in 32.16 seconds" elapsed="32.16" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

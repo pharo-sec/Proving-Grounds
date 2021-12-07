@@ -1,0 +1,12 @@
+# Nmap 7.91 scan initiated Fri Nov 26 11:39:15 2021 as: nmap -p- -Pn -oA nmap/full-port --open 192.168.82.47
+Nmap scan report for 192.168.82.47
+Host is up (0.055s latency).
+Not shown: 65529 filtered ports, 2 closed ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+80/tcp   open  http
+5437/tcp open  pmip6-data
+
+# Nmap done at Fri Nov 26 11:41:00 2021 -- 1 IP address (1 host up) scanned in 105.21 seconds
