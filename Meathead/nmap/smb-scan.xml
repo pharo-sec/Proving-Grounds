@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Tue May 10 19:21:49 2022 as: nmap -p 139,445 -&#45;script=smb-vuln* -Pn -oA nmap/smb-scan 192.168.206.70 -->
+<nmaprun scanner="nmap" args="nmap -p 139,445 -&#45;script=smb-vuln* -Pn -oA nmap/smb-scan 192.168.206.70" start="1652224909" startstr="Tue May 10 19:21:49 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="139,445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1652224909" endtime="1652224921"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.206.70" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-ms10-054" output="false">false</script><script id="smb-vuln-ms10-061" output="No accounts left to try">false</script></hostscript><times srtt="50649" rttvar="38005" to="202669"/>
+</host>
+<runstats><finished time="1652224921" timestr="Tue May 10 19:22:01 2022" summary="Nmap done at Tue May 10 19:22:01 2022; 1 IP address (1 host up) scanned in 12.62 seconds" elapsed="12.62" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

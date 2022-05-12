@@ -1,0 +1,15 @@
+# Nmap 7.92 scan initiated Tue May 10 19:00:30 2022 as: nmap -p- -Pn -oA nmap/full-port 192.168.206.70
+Nmap scan report for 192.168.206.70
+Host is up (0.052s latency).
+Not shown: 65527 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1221/tcp open  sweetware-apps
+1435/tcp open  ibm-cics
+3389/tcp open  ms-wbt-server
+5985/tcp open  wsman
+
+# Nmap done at Tue May 10 19:02:15 2022 -- 1 IP address (1 host up) scanned in 104.84 seconds

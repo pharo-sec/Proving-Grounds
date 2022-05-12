@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Tue May 10 19:03:29 2022 as: nmap -p 80,135,139,445,1221,1435,3389,5985 -sC -sV -Pn -oA nmap/service-scan 192.168.206.70 -->
+<nmaprun scanner="nmap" args="nmap -p 80,135,139,445,1221,1435,3389,5985 -sC -sV -Pn -oA nmap/service-scan 192.168.206.70" start="1652223809" startstr="Tue May 10 19:03:29 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="8" services="80,135,139,445,1221,1435,3389,5985"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1652223809" endtime="1652223891"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.206.70" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_server:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-IIS/10.0"><elem>Microsoft-IIS/10.0</elem>
+</script><script id="http-title" output="Plantronics"><elem key="title">&#xd;&#xa;&#x9;Plantronics&#xd;&#xa;</elem>
+</script><script id="http-methods" output="&#xa;  Potentially risky methods: TRACE"><table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Microsoft Windows Server 2008 R2 - 2012 microsoft-ds" ostype="Windows Server 2008 R2 - 2012" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="1221"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="Microsoft ftpd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:ftp_service</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ftp-syst" output="&#xa;  SYST: Windows_NT"><elem key="SYST">Windows_NT</elem>
+</script><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;04-27-20  07:02PM                18866 Elementum Supremum.docx&#xa;04-27-20  07:02PM               764176 file_example_MP3_700KB.mp3&#xa;04-27-20  07:02PM                15690 img.jpg&#xa;04-27-20  07:02PM                  302 MSSQL_BAK.rar&#xa;04-27-20  07:02PM                  548 palindromes.txt&#xa;04-27-20  07:02PM                45369 server.jpg"/></port>
+<port protocol="tcp" portid="1435"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-sql-s" product="Microsoft SQL Server 2017" version="14.00.1000" method="probed" conf="10"><cpe>cpe:/a:microsoft:sql_server:2017</cpe></service><script id="ssl-cert" output="Subject: commonName=SSL_Self_Signed_Fallback&#xa;Not valid before: 2021-09-21T18:21:07&#xa;Not valid after:  2051-09-21T18:21:07"><table key="subject">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">\x00S\x00S\x00L\x00_\x00S\x00e\x00l\x00f\x00_\x00S\x00i\x00g\x00n\x00e\x00d\x00_\x00F\x00a\x00l\x00l\x00b\x00a\x00c\x00k</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">A11F778714AD9D0DBE66182052385574A49BE51A2D47AFB50D91BA011E2B39CEFE0D41457283B3FF73A0289581FD06CCA9D4CC9F12D811FD57D70567C8D0F5D4135CC0C63B593591AD2FC218A0C4AD105CF4CBF8AA9BDB994293505ACE22E6AB99324EF894B36E7FED3EE3951564B0865938411A562B98071209C3EE61915250514293EB2B21884892809FDD40FF288AE7A48C152CE9A28CAC3A49573B8575EBB99FC579870F66CCE9D50B83EF6720A7E1ADF13B96161196D1ACE805E6F1FECD4A8F1BE29E5A776524EF342A9FC350C6B7EA1B17AF1973A267B749FF95D07C287657A031B78D67E711ACE2C252F9D8F899FDBF8DFEEED2DC34676E9EBF21C179</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-09-21T18:21:07</elem>
+<elem key="notAfter">2051-09-21T18:21:07</elem>
+</table>
+<elem key="md5">2f08d0d6e1e9f7c98484bf6ddec06b8a</elem>
+<elem key="sha1">c07ce213c1bca546864ed706b7f3e9a4bb63988d</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDADCCAeigAwIBAgIQGJhm903KrINIa1kqXYtYxjANBgkqhkiG9w0BAQsFADA7&#xa;MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA&#xa;bABsAGIAYQBjAGswIBcNMjEwOTIxMTgyMTA3WhgPMjA1MTA5MjExODIxMDdaMDsx&#xa;OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs&#xa;AGwAYgBhAGMAazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKEfd4cU&#xa;rZ0NvmYYIFI4VXSkm+UaLUevtQ2RugEeKznO/g1BRXKDs/9zoCiVgf0GzKnUzJ8S&#xa;2BH9V9cFZ8jQ9dQTXMDGO1k1ka0vwhigxK0QXPTL+Kqb25lCk1BaziLmq5kyTviU&#xa;s25/7T7jlRVksIZZOEEaViuYBxIJw+5hkVJQUUKT6yshiEiSgJ/dQP8oiuekjBUs&#xa;6aKMrDpJVzuFdeu5n8V5hw9mzOnVC4PvZyCn4a3xO5YWEZbRrOgF5vH+zUqPG+Ke&#xa;WndlJO80Kp/DUMa36hsXrxlzome3Sf+V0HwodlegMbeNZ+cRrOLCUvnY+Jn9v43+&#xa;7tLcNGdunr8hwXkCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAXadJAGsDZtOpszGS&#xa;UonYNBbhQ3SueJYXT5YAKiesdM+Bq/rp6ev7Dc0e6kkBwypYYzBkFIOrrm23XHIz&#xa;0R2aM3AkjC17a7M2WaYhkK2Vl2az6k/Bh0yaapobVlRkotZzKLlgv/IO6umpSSTf&#xa;9G/CiB1RfomM5TMhTzPlbH8JBkYvCqlQLkFEmt5lv7Ea6UR6l5xWGst52DgtkoIE&#xa;ZEZ5WolrOgce9Wm8s6ziGEIgaexNskf3rXMKwFwogQEqMs1bUGYsYTXMjFmkxqGl&#xa;zuFR0wE9UUCXMHi5wZKviSP+SUnH2h8o/bB8LbgAqeDyPJQGQRdbIeouSoXOV/nV&#xa;qnR8UQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2022-05-10T23:04:51+00:00; 0s from scanner time."><elem key="date">2022-05-10T23:04:51+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="ms-sql-ntlm-info" output="&#xa;  Target_Name: MEATHEAD&#xa;  NetBIOS_Domain_Name: MEATHEAD&#xa;  NetBIOS_Computer_Name: MEATHEAD&#xa;  DNS_Domain_Name: Meathead&#xa;  DNS_Computer_Name: Meathead&#xa;  Product_Version: 10.0.17763"><elem key="Target_Name">MEATHEAD</elem>
+<elem key="NetBIOS_Domain_Name">MEATHEAD</elem>
+<elem key="NetBIOS_Computer_Name">MEATHEAD</elem>
+<elem key="DNS_Domain_Name">Meathead</elem>
+<elem key="DNS_Computer_Name">Meathead</elem>
+<elem key="Product_Version">10.0.17763</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="2022-05-10T23:04:51+00:00; 0s from scanner time."><elem key="date">2022-05-10T23:04:51+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="ssl-cert" output="Subject: commonName=Meathead&#xa;Not valid before: 2022-05-09T22:59:37&#xa;Not valid after:  2022-11-08T22:59:37"><table key="subject">
+<elem key="commonName">Meathead</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Meathead</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">B9CC05973DAD8BB0F45D7AB971E3509DEC70A37E91683F4AF5A17200C00E82576213CA6BE1A1BD5D368C904D088F7BC4487DFA52FABDF56B358D104BA6D00D1A2830C4DE1494D8D234C32FE8BF14A55F0486F20AC7071877A4E7E114AEE104199E436A2500379E60FED08499E992F51129BFE6927BA6E1F593FE5B58A75D48C71E416C27B23E8D1EFCF2292C4C0D42426EAB3DEBA8C8BAD0ABC82972E1AB2F8C67D77A36BE9F45B9B5EA7FBDB800A9BAECF854555C98D27980110649951FC4065CABAC9872942B72FFF6FBC4DFC497FA5DABE5440EBBDA9A21C5971843B008B0C513ABF22689922015844EB83A93379E00F3D71985A8907CEE6F3EA0EBFB0D55</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2022-05-09T22:59:37</elem>
+<elem key="notAfter">2022-11-08T22:59:37</elem>
+</table>
+<elem key="md5">9f748bc7608c9f176e935912b16a41c4</elem>
+<elem key="sha1">137246ce91da18ec011e31860670df8e406153e5</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC1DCCAbygAwIBAgIQPR/8cHEoTItLkCuI2znC0TANBgkqhkiG9w0BAQsFADAT&#xa;MREwDwYDVQQDEwhNZWF0aGVhZDAeFw0yMjA1MDkyMjU5MzdaFw0yMjExMDgyMjU5&#xa;MzdaMBMxETAPBgNVBAMTCE1lYXRoZWFkMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A&#xa;MIIBCgKCAQEAucwFlz2ti7D0XXq5ceNQnexwo36RaD9K9aFyAMAOgldiE8pr4aG9&#xa;XTaMkE0Ij3vESH36Uvq99Ws1jRBLptANGigwxN4UlNjSNMMv6L8UpV8EhvIKxwcY&#xa;d6Tn4RSu4QQZnkNqJQA3nmD+0ISZ6ZL1ESm/5pJ7puH1k/5bWKddSMceQWwnsj6N&#xa;HvzyKSxMDUJCbqs966jIutCryCly4asvjGfXeja+n0W5tep/vbgAqbrs+FRVXJjS&#xa;eYARBkmVH8QGXKusmHKUK3L/9vvE38SX+l2r5UQOu9qaIcWXGEOwCLDFE6vyJomS&#xa;IBWETrg6kzeeAPPXGYWokHzubz6g6/sNVQIDAQABoyQwIjATBgNVHSUEDDAKBggr&#xa;BgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAHLwF8R5+OiS&#xa;RfcrjCB8nQNgylzqBZKcBf2POCZSAx/4/pzCvuRt7UvK9Ghnzc10QLi5sF6Q/rei&#xa;3LQshKHZcuDBaUL6QDikZuN61abyea+bBkpzsefO9gvkM/HBjATkLEZwkKmiIlmW&#xa;HB2PLVc3FqD1EYIJMjsL1ot8BcG2JgGZqjz5D/XZq/RysypovB+TzFuGXfKq3rYH&#xa;KSwnxWF/lBr31NWBxqFFmGiFCWTNlll3XVmb2zPfbXZh4BQWBUxen25LrxRlEoZo&#xa;hLIQC47dL7xIEFWmj4SdXzCPlTnZhQFGizeqLDmUyosnUiLkU+Y/e221GCKEy0mS&#xa;lt48FsVr21w=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="rdp-ntlm-info" output="&#xa;  Target_Name: MEATHEAD&#xa;  NetBIOS_Domain_Name: MEATHEAD&#xa;  NetBIOS_Computer_Name: MEATHEAD&#xa;  DNS_Domain_Name: Meathead&#xa;  DNS_Computer_Name: Meathead&#xa;  Product_Version: 10.0.17763&#xa;  System_Time: 2022-05-10T23:04:11+00:00"><elem key="Target_Name">MEATHEAD</elem>
+<elem key="NetBIOS_Domain_Name">MEATHEAD</elem>
+<elem key="NetBIOS_Computer_Name">MEATHEAD</elem>
+<elem key="DNS_Domain_Name">Meathead</elem>
+<elem key="DNS_Computer_Name">Meathead</elem>
+<elem key="Product_Version">10.0.17763</elem>
+<elem key="System_Time">2022-05-10T23:04:11+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+</ports>
+<hostscript><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled but not required"><table key="3.1.1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2022-05-10T23:04:14&#xa;  start_date: N/A"><elem key="date">2022-05-10T23:04:14</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><times srtt="51336" rttvar="6890" to="100000"/>
+</host>
+<runstats><finished time="1652223891" timestr="Tue May 10 19:04:51 2022" summary="Nmap done at Tue May 10 19:04:51 2022; 1 IP address (1 host up) scanned in 82.88 seconds" elapsed="82.88" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

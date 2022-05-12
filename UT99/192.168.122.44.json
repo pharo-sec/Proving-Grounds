@@ -1,0 +1,45 @@
+{
+    "channels": {
+        "#ut99": {
+            "name": "#ut99",
+            "topic": "[+nt] Fragging since UT99!  Unreal Tournament 99 Game Server UP!  IP: *THIS*  Port: 7778",
+            "usercount": "1"
+        }
+    },
+    "linkList": {
+        "irc.madcowz.localdomain": [
+            "daisy"
+        ]
+    },
+    "links": [
+        {
+            "hopcount": "0",
+            "info": "Mad Cowz IRC",
+            "mask": "irc.madcowz.localdomain",
+            "server": "irc.madcowz.localdomain"
+        }
+    ],
+    "userDetails": {
+        "daisy": {
+            "host": "0::1",
+            "identified": false,
+            "nick": "daisy",
+            "oper": false,
+            "real": ":1 * :realname",
+            "user": "daisy"
+        }
+    },
+    "userList": {
+        "#ut99": [
+            "daisy"
+        ]
+    },
+    "users": {
+        "daisy": [
+            ":irc.madcowz.localdomain 311 znQyGlYZDZ daisy daisy 0::1 * :realname",
+            ":irc.madcowz.localdomain 319 znQyGlYZDZ daisy :@#ut99 ",
+            ":irc.madcowz.localdomain 312 znQyGlYZDZ daisy irc.madcowz.localdomain :Mad Cowz IRC",
+            ":irc.madcowz.localdomain 317 znQyGlYZDZ daisy 916673 1650972879 :seconds idle, signon time"
+        ]
+    }
+}

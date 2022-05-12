@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Tue May 10 19:00:30 2022 as: nmap -p- -Pn -oA nmap/full-port 192.168.206.70
+Host: 192.168.206.70 ()	Status: Up
+Host: 192.168.206.70 ()	Ports: 80/open/tcp//http///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 1221/open/tcp//sweetware-apps///, 1435/open/tcp//ibm-cics///, 3389/open/tcp//ms-wbt-server///, 5985/open/tcp//wsman///	Ignored State: filtered (65527)
+# Nmap done at Tue May 10 19:02:15 2022 -- 1 IP address (1 host up) scanned in 104.84 seconds

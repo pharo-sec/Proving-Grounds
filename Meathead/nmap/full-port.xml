@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Tue May 10 19:00:30 2022 as: nmap -p- -Pn -oA nmap/full-port 192.168.206.70 -->
+<nmaprun scanner="nmap" args="nmap -p- -Pn -oA nmap/full-port 192.168.206.70" start="1652223630" startstr="Tue May 10 19:00:30 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1652223630" endtime="1652223735"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.206.70" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65527">
+<extrareasons reason="no-response" count="65527" proto="tcp" ports="1-79,81-134,136-138,140-444,446-1220,1222-1434,1436-3388,3390-5984,5986-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1221"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="sweetware-apps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1435"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ibm-cics" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="wsman" method="table" conf="3"/></port>
+</ports>
+<times srtt="51737" rttvar="1410" to="100000"/>
+</host>
+<runstats><finished time="1652223735" timestr="Tue May 10 19:02:15 2022" summary="Nmap done at Tue May 10 19:02:15 2022; 1 IP address (1 host up) scanned in 104.84 seconds" elapsed="104.84" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
