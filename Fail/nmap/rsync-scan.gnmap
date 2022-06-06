@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sat Jun  4 21:00:12 2022 as: nmap -sV --script rsync-list-modules -oA nmap/rsync-scan 192.168.156.126 873
+Host: 192.168.156.126 ()	Status: Up
+Host: 192.168.156.126 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)/, 873/open/tcp//rsync//(protocol version 31)/	Ignored State: closed (998)
+# Nmap done at Sat Jun  4 21:00:15 2022 -- 2 IP addresses (1 host up) scanned in 3.54 seconds

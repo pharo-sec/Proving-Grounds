@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Thu May 26 01:14:44 2022 as: nmap -p- -Pn -oA nmap/full-port --open 192.168.61.117
+Host: 192.168.61.117 ()	Status: Up
+Host: 192.168.61.117 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 18000/open/tcp//biimenu///, 50000/open/tcp//ibm-db2///
+# Nmap done at Thu May 26 01:17:04 2022 -- 1 IP address (1 host up) scanned in 139.64 seconds

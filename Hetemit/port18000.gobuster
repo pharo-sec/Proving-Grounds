@@ -1,0 +1,6 @@
+/login                (Status: 200) [Size: 1888]
+/users                (Status: 302) [Size: 99] [--> http://192.168.61.117:18000/login]
+/logout               (Status: 302) [Size: 99] [--> http://192.168.61.117:18000/login]
+/404                  (Status: 200) [Size: 1722]
+/500                  (Status: 200) [Size: 1635]
+/422                  (Status: 200) [Size: 1705]

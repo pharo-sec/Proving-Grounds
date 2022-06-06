@@ -1,0 +1,9 @@
+receiving incremental file list
+drwxr-xr-x          4,096 2021/01/21 09:21:59 .
+lrwxrwxrwx              9 2020/12/03 15:22:42 .bash_history -> /dev/null
+-rw-r--r--            220 2019/04/18 00:12:36 .bash_logout
+-rw-r--r--          3,526 2019/04/18 00:12:36 .bashrc
+-rw-r--r--            807 2019/04/18 00:12:36 .profile
+
+sent 20 bytes  received 136 bytes  104.00 bytes/sec
+total size is 4,562  speedup is 29.24

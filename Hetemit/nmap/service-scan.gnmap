@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Thu May 26 01:18:35 2022 as: nmap -p 21,22,80,139,445,18000,50000 -sC -sV -Pn -oA nmap/service-scan 192.168.61.117
+Host: 192.168.61.117 ()	Status: Up
+Host: 192.168.61.117 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 8.0 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.37 ((centos))/, 139/open/tcp//netbios-ssn//Samba smbd 4.6.2/, 445/open/tcp//netbios-ssn//Samba smbd 4.6.2/, 18000/open/tcp//biimenu?///, 50000/open/tcp//http//Werkzeug httpd 1.0.1 (Python 3.6.8)/
+# Nmap done at Thu May 26 01:19:28 2022 -- 1 IP address (1 host up) scanned in 52.36 seconds

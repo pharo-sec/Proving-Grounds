@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Wed Jun  1 21:06:19 2022 as: nmap -p- -Pn -oA nmap/full-port 192.168.200.61
+Host: 192.168.200.61 ()	Status: Up
+Host: 192.168.200.61 ()	Ports: 21/open/tcp//ftp///, 80/open/tcp//http///, 8081/open/tcp//blackice-icecap///	Ignored State: filtered (65532)
+# Nmap done at Wed Jun  1 21:08:04 2022 -- 1 IP address (1 host up) scanned in 105.23 seconds

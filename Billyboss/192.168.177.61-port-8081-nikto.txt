@@ -1,0 +1,16 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          192.168.177.61
++ Target Hostname:    192.168.177.61
++ Target Port:        8081
++ Start Time:         2022-06-01 23:31:47 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Nexus/3.21.0-05 (OSS)
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ "robots.txt" contains 3 entries which should be manually viewed.
++ Server banner has changed from 'Nexus/3.21.0-05 (OSS)' to 'Jetty(9.4.18.v20190429)' which may suggest a WAF, load balancer or proxy is in place
++ Allowed HTTP Methods: GET, HEAD, POST, OPTIONS 
++ 7919 requests: 0 error(s) and 2 item(s) reported on remote host
++ End Time:           2022-06-01 23:39:27 (GMT-4) (460 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

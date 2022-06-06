@@ -1,0 +1,9 @@
+# Nmap 7.92 scan initiated Sat Jun  4 20:42:01 2022 as: nmap -p- -Pn -oA nmap/full-port --open 192.168.156.126
+Nmap scan report for 192.168.156.126
+Host is up (0.074s latency).
+Not shown: 65533 closed tcp ports (conn-refused)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+873/tcp open  rsync
+
+# Nmap done at Sat Jun  4 20:42:26 2022 -- 1 IP address (1 host up) scanned in 24.40 seconds

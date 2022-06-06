@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sat Jun  4 20:42:26 2022 as: nmap -p 22,873 -Pn -sC -sV -oA nmap/service-scan 192.168.156.126
+Host: 192.168.156.126 ()	Status: Up
+Host: 192.168.156.126 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)/, 873/open/tcp//rsync//(protocol version 31)/
+# Nmap done at Sat Jun  4 20:42:29 2022 -- 1 IP address (1 host up) scanned in 2.91 seconds
