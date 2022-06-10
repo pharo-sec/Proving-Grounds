@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Thu Jun  9 20:21:42 2022 as: nmap -p 21,22,139,445,3306,8003 -Pn -sC -sV -oA nmap/service-scan 192.168.200.64 -->
+<nmaprun scanner="nmap" args="nmap -p 21,22,139,445,3306,8003 -Pn -sC -sV -oA nmap/service-scan 192.168.200.64" start="1654820502" startstr="Thu Jun  9 20:21:42 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="6" services="21-22,139,445,3306,8003"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1654820503" endtime="1654820555"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.200.64" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="vsftpd" version="3.0.3" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:3.0.3</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 b2:66:75:50:1b:18:f5:e9:9f:db:2c:d4:e3:95:7a:44 (RSA)&#xa;  256 91:2d:26:f1:ba:af:d1:8b:69:8f:81:4a:32:af:9c:77 (ECDSA)&#xa;  256 ec:6f:df:8b:ce:19:13:8a:52:57:3e:72:a3:14:6f:40 (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">b26675501b18f5e99fdb2cd4e3957a44</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQC44YysvRUv+02vB7LK+DbEvDnTUU2Zzaj42pbyX7gL4I5DhhWWZmK4Sr/MulEE2XPnKhXCCwTVuA12C/VuFhVdnq7WjDwfV+4a1DEuDG8P7wQAux0waAsly34mGtd7HQhQIv9h7nQWcTx8hoOrF6D71eHiZmLJ6fk01VlFN75XKJGn/T/ClJHz9UJ33zwkhqXskMO9At21LfOBE+I3IQCHuFFO6DcQWw/SsZaXQxHNzLqnI/9j1aQuvyuh6KMdT6p10D577maBz+T+Hyq/qeOgbGU0YGAoXXMU36FibkoQ+WwDRYbEHYKJccUXhzFWp980PYCIDtZNaWuo/AbgryLB</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">912d26f1baafd18b698f814a32af9c77</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOmcORNC6GjDnH1cqJrCeytZJjGrpJyY+CgseFsH27PJmSbmVYEz0ls0w/oXR0xrG/IfvxxyH9RRX2BIsBTx2cY=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">ec6fdf8bce19138a52573e72a3146f40</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIP9wfKL6wusRXGDMv5Tcf2OxMAIkhvOofRPsrSQ+aMbK</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="ZINO" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.9.5-Debian" extrainfo="workgroup: WORKGROUP" hostname="ZINO" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" servicefp="SF-Port3306-TCP:V=7.92%I=7%D=6/9%Time=62A28E97%P=x86_64-pc-linux-gnu%r(NULL,4D,&quot;I\0\0\x01\xffj\x04Host\x20&apos;192\.168\.49\.200&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  NULL: &#xa;    Host &apos;192.168.49.200&apos; is not allowed to connect to this MariaDB server"><elem key="NULL">&#xa;    Host &apos;192.168.49.200&apos; is not allowed to connect to this MariaDB server</elem>
+</script></port>
+<port protocol="tcp" portid="8003"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.38" hostname="127.0.1.1" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.38</cpe></service><script id="http-server-header" output="Apache/2.4.38 (Debian)"><elem>Apache/2.4.38 (Debian)</elem>
+</script><script id="http-title" output="Index of /"><elem key="title">Index of /</elem>
+</script><script id="http-ls" output="Volume /&#xa;SIZE  TIME              FILENAME&#xa;-     2019-02-05 21:02  booked/&#xa;&#xa;"><table key="volumes">
+<table>
+<table key="files">
+<table>
+<elem key="time">2019-02-05 21:02</elem>
+<elem key="filename">booked/</elem>
+<elem key="size">- </elem>
+</table>
+</table>
+<elem key="volume">/</elem>
+</table>
+</table>
+<table key="total">
+<elem key="bytes">0</elem>
+<elem key="files">1</elem>
+</table>
+</script></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 1h20m00s, deviation: 2h18m34s, median: 0s"><elem key="median">0</elem>
+<elem key="stddev">8314</elem>
+<elem key="count">3</elem>
+<elem key="mean">4800</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled but not required"><table key="3.1.1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2022-06-10T00:21:59&#xa;  start_date: N/A"><elem key="date">2022-06-10T00:21:59</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.9.5-Debian)&#xa;  Computer name: zino&#xa;  NetBIOS computer name: ZINO\x00&#xa;  Domain name: \x00&#xa;  FQDN: zino&#xa;  System time: 2022-06-09T20:21:56-04:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.9.5-Debian</elem>
+<elem key="server">ZINO\x00</elem>
+<elem key="date">2022-06-09T20:21:56-04:00</elem>
+<elem key="fqdn">zino</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script></hostscript><times srtt="47804" rttvar="11405" to="100000"/>
+</host>
+<runstats><finished time="1654820555" timestr="Thu Jun  9 20:22:35 2022" summary="Nmap done at Thu Jun  9 20:22:35 2022; 1 IP address (1 host up) scanned in 52.92 seconds" elapsed="52.92" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

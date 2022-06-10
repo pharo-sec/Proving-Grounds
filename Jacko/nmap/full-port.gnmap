@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sun Jun  5 22:31:06 2022 as: nmap -p- -Pn -oA nmap/full-port --open 192.168.132.66
+Host: 192.168.132.66 ()	Status: Up
+Host: 192.168.132.66 ()	Ports: 80/open/tcp//http///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 7680/open/tcp//pando-pub///, 8082/open/tcp//blackice-alerts///	Ignored State: filtered (65529)
+# Nmap done at Sun Jun  5 22:32:51 2022 -- 1 IP address (1 host up) scanned in 105.12 seconds

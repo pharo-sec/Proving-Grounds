@@ -1,0 +1,14 @@
+# Nmap 7.92 scan initiated Sun Jun  5 22:31:06 2022 as: nmap -p- -Pn -oA nmap/full-port --open 192.168.132.66
+Nmap scan report for 192.168.132.66
+Host is up (0.054s latency).
+Not shown: 65529 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+7680/tcp open  pando-pub
+8082/tcp open  blackice-alerts
+
+# Nmap done at Sun Jun  5 22:32:51 2022 -- 1 IP address (1 host up) scanned in 105.12 seconds

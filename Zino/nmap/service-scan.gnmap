@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Thu Jun  9 20:21:42 2022 as: nmap -p 21,22,139,445,3306,8003 -Pn -sC -sV -oA nmap/service-scan 192.168.200.64
+Host: 192.168.200.64 ()	Status: Up
+Host: 192.168.200.64 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 4.9.5-Debian (workgroup: WORKGROUP)/, 3306/open/tcp//mysql?///, 8003/open/tcp//http//Apache httpd 2.4.38/
+# Nmap done at Thu Jun  9 20:22:35 2022 -- 1 IP address (1 host up) scanned in 52.92 seconds

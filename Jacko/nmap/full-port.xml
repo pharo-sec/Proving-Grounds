@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sun Jun  5 22:31:06 2022 as: nmap -p- -Pn -oA nmap/full-port -&#45;open 192.168.132.66 -->
+<nmaprun scanner="nmap" args="nmap -p- -Pn -oA nmap/full-port -&#45;open 192.168.132.66" start="1654482666" startstr="Sun Jun  5 22:31:06 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1654482666" endtime="1654482771"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.132.66" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65529">
+<extrareasons reason="no-response" count="65529" proto="tcp" ports="1-79,81-134,136-138,140-444,446-7679,7681-8081,8083-65535"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pando-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8082"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="blackice-alerts" method="table" conf="3"/></port>
+</ports>
+<times srtt="54480" rttvar="1493" to="100000"/>
+</host>
+<runstats><finished time="1654482771" timestr="Sun Jun  5 22:32:51 2022" summary="Nmap done at Sun Jun  5 22:32:51 2022; 1 IP address (1 host up) scanned in 105.12 seconds" elapsed="105.12" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

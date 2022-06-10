@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Thu Jun  9 20:30:43 2022 as: nmap -p 139,445 -&#45;script=smb-vuln* -Pn -oA nmap/smb-scan 192.168.200.64 -->
+<nmaprun scanner="nmap" args="nmap -p 139,445 -&#45;script=smb-vuln* -Pn -oA nmap/smb-scan 192.168.200.64" start="1654821043" startstr="Thu Jun  9 20:30:43 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="139,445"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1654821044" endtime="1654821098"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.200.64" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="smb-vuln-regsvc-dos" output="&#xa;  VULNERABLE:&#xa;  Service regsvc in Microsoft Windows systems vulnerable to denial of service&#xa;    State: VULNERABLE&#xa;      The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference&#xa;      pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes&#xa;      while working on smb-enum-sessions.&#xa;          &#xa;"><table key="NMAP-1">
+<elem key="title">Service regsvc in Microsoft Windows systems vulnerable to denial of service</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference&#xa;pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes&#xa;while working on smb-enum-sessions.&#xa;    </elem>
+</table>
+</table>
+</script><script id="smb-vuln-ms10-061" output="false">false</script><script id="smb-vuln-ms10-054" output="false">false</script></hostscript><times srtt="49110" rttvar="37463" to="198962"/>
+</host>
+<runstats><finished time="1654821098" timestr="Thu Jun  9 20:31:38 2022" summary="Nmap done at Thu Jun  9 20:31:38 2022; 1 IP address (1 host up) scanned in 54.55 seconds" elapsed="54.55" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

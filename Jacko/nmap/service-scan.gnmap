@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sun Jun  5 22:32:51 2022 as: nmap -p 80,135,139,445,7680,8082 -Pn -sC -sV -oA nmap/service-scan 192.168.132.66
+Host: 192.168.132.66 ()	Status: Up
+Host: 192.168.132.66 ()	Ports: 80/open/tcp//http//Microsoft IIS httpd 10.0/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds?///, 7680/open/tcp//pando-pub?///, 8082/open/tcp//http//H2 database http console/
+# Nmap done at Sun Jun  5 22:34:17 2022 -- 1 IP address (1 host up) scanned in 86.00 seconds

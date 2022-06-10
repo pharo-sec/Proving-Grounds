@@ -1,0 +1,14 @@
+# Nmap 7.92 scan initiated Thu Jun  9 20:18:49 2022 as: nmap -p- -Pn -oA nmap/full-port --open 192.168.200.64
+Nmap scan report for 192.168.200.64
+Host is up (0.048s latency).
+Not shown: 65529 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3306/tcp open  mysql
+8003/tcp open  mcreport
+
+# Nmap done at Thu Jun  9 20:21:42 2022 -- 1 IP address (1 host up) scanned in 173.43 seconds
