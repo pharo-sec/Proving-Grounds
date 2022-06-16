@@ -1,46 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.91 scan initiated Tue Aug 31 21:57:19 2021 as: nmap -Pn -p 21,22,135,139,3389,8089,33333 -sV -sC -T4 -oA nmap/service-scan 192.168.159.99 -->
-<nmaprun scanner="nmap" args="nmap -Pn -p 21,22,135,139,3389,8089,33333 -sV -sC -T4 -oA nmap/service-scan 192.168.159.99" start="1630461439" startstr="Tue Aug 31 21:57:19 2021" version="7.91" xmloutputversion="1.05">
+<!-- Nmap 7.92 scan initiated Wed Jun 15 23:10:12 2022 as: nmap -p 21,22,135,139,3389,8089,33333 -sC -sV -oA Nickel/nmap/service-scan -Pn 192.168.243.99 -->
+<nmaprun scanner="nmap" args="nmap -p 21,22,135,139,3389,8089,33333 -sC -sV -oA Nickel/nmap/service-scan -Pn 192.168.243.99" start="1655349012" startstr="Wed Jun 15 23:10:12 2022" version="7.92" xmloutputversion="1.05">
 <scaninfo type="connect" protocol="tcp" numservices="7" services="21-22,135,139,3389,8089,33333"/>
 <verbose level="0"/>
 <debugging level="0"/>
-<host starttime="1630461440" endtime="1630461523"><status state="up" reason="user-set" reason_ttl="0"/>
-<address addr="192.168.159.99" addrtype="ipv4"/>
+<host starttime="1655349013" endtime="1655349095"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.243.99" addrtype="ipv4"/>
 <hostnames>
 </hostnames>
 <ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="FileZilla ftpd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:filezilla-project:filezilla_server</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ftp-syst" output="&#xa;  SYST: UNIX emulated by FileZilla"><elem key="SYST">UNIX emulated by FileZilla</elem>
 </script></port>
 <port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="for_Windows_8.1" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:for_windows_8.1</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 86:84:fd:d5:43:27:05:cf:a7:f2:e9:e2:75:70:d5:f3 (RSA)&#xa;  256 9c:93:cf:48:a9:4e:70:f4:60:de:e1:a9:c2:c0:b6:ff (ECDSA)&#xa;  256 00:4e:d7:3b:0f:9f:e3:74:4d:04:99:0b:b1:8b:de:a5 (ED25519)"><table>
-<elem key="fingerprint">8684fdd5432705cfa7f2e9e27570d5f3</elem>
-<elem key="type">ssh-rsa</elem>
-<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDYR4Bx82VWETlsjIFs21j6lZ6/S40jMJvuXF+ay4Qz4b+ws2YobB5h0+IrHdr3epMNFmSY8JXFWzIILhkvF/rmadXRtGwib1VZkSa3nr5oYdMajoWK0jOVSoFJmDTJvhj+T3XE7+Q0tEkQ2EeGPrz7nK5XWzBp8SZdywCE/iz1HLvUIlsOqpDWHSjrnjkUaaleTgoVTEi63Dx4inY2KS5mX2mnS/mLzMlLZ0qj8vL9gz6ZJgf7LMNhXb/pWOtxfn6zmSoVHXEXgubXwLtrn4wOIvbZkm5/uEx+eFzx1AOEQ2LjaKItEqLlP3E5sdutVP6yymDTGBtlXgfvtfGS2lgZiitorAXjjND6Sqcppp5lQJk2XSBJC58U0SzjXdyflJwsus5mnKnX79nKxXPNPwM6Z3Ki1O9vE+KsJ1dZJuaTINVgLqrgwJ7BCkI2HyojfqzjHs4FlYVHnukjqunG90OMyAASSR0oEnUTPqFmrtL/loEc3h44GT+8m9JS1LgdExU=</elem>
 <elem key="bits">3072</elem>
+<elem key="fingerprint">8684fdd5432705cfa7f2e9e27570d5f3</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDYR4Bx82VWETlsjIFs21j6lZ6/S40jMJvuXF+ay4Qz4b+ws2YobB5h0+IrHdr3epMNFmSY8JXFWzIILhkvF/rmadXRtGwib1VZkSa3nr5oYdMajoWK0jOVSoFJmDTJvhj+T3XE7+Q0tEkQ2EeGPrz7nK5XWzBp8SZdywCE/iz1HLvUIlsOqpDWHSjrnjkUaaleTgoVTEi63Dx4inY2KS5mX2mnS/mLzMlLZ0qj8vL9gz6ZJgf7LMNhXb/pWOtxfn6zmSoVHXEXgubXwLtrn4wOIvbZkm5/uEx+eFzx1AOEQ2LjaKItEqLlP3E5sdutVP6yymDTGBtlXgfvtfGS2lgZiitorAXjjND6Sqcppp5lQJk2XSBJC58U0SzjXdyflJwsus5mnKnX79nKxXPNPwM6Z3Ki1O9vE+KsJ1dZJuaTINVgLqrgwJ7BCkI2HyojfqzjHs4FlYVHnukjqunG90OMyAASSR0oEnUTPqFmrtL/loEc3h44GT+8m9JS1LgdExU=</elem>
+<elem key="type">ssh-rsa</elem>
 </table>
 <table>
+<elem key="bits">256</elem>
 <elem key="fingerprint">9c93cf48a94e70f460dee1a9c2c0b6ff</elem>
-<elem key="type">ecdsa-sha2-nistp256</elem>
 <elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDJYE805huwKUl0fJM8+N9Mk7GUQeEEc5iA/yYqgxE7Bwgz4h5xufRONkR6bWxcxu8/AHslwkkDkjRKNdr4uFzY=</elem>
-<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
 </table>
 <table>
-<elem key="fingerprint">004ed73b0f9fe3744d04990bb18bdea5</elem>
-<elem key="type">ssh-ed25519</elem>
-<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIL8cLYuHBTVFfYPb/YzUIyT39bUzA/sPDFEC/xChZyZ4</elem>
 <elem key="bits">256</elem>
+<elem key="fingerprint">004ed73b0f9fe3744d04990bb18bdea5</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIL8cLYuHBTVFfYPb/YzUIyT39bUzA/sPDFEC/xChZyZ4</elem>
+<elem key="type">ssh-ed25519</elem>
 </table>
 </script></port>
 <port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
 <port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
-<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="rdp-ntlm-info" output="&#xa;  Target_Name: NICKEL&#xa;  NetBIOS_Domain_Name: NICKEL&#xa;  NetBIOS_Computer_Name: NICKEL&#xa;  DNS_Domain_Name: nickel&#xa;  DNS_Computer_Name: nickel&#xa;  Product_Version: 10.0.18362&#xa;  System_Time: 2021-09-01T01:57:38+00:00"><elem key="Target_Name">NICKEL</elem>
-<elem key="NetBIOS_Domain_Name">NICKEL</elem>
-<elem key="NetBIOS_Computer_Name">NICKEL</elem>
-<elem key="DNS_Domain_Name">nickel</elem>
-<elem key="DNS_Computer_Name">nickel</elem>
-<elem key="Product_Version">10.0.18362</elem>
-<elem key="System_Time">2021-09-01T01:57:38+00:00</elem>
-</script><script id="ssl-cert" output="Subject: commonName=nickel&#xa;Not valid before: 2021-08-31T01:52:04&#xa;Not valid after:  2022-03-02T01:52:04"><table key="subject">
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=nickel&#xa;Not valid before: 2022-06-15T03:07:21&#xa;Not valid after:  2022-12-15T03:07:21"><table key="subject">
 <elem key="commonName">nickel</elem>
 </table>
 <table key="issuer">
@@ -64,22 +57,29 @@
 </table>
 <elem key="sig_algo">sha256WithRSAEncryption</elem>
 <table key="validity">
-<elem key="notBefore">2021-08-31T01:52:04</elem>
-<elem key="notAfter">2022-03-02T01:52:04</elem>
+<elem key="notBefore">2022-06-15T03:07:21</elem>
+<elem key="notAfter">2022-12-15T03:07:21</elem>
 </table>
-<elem key="md5">5900f54c3d11d69187c43b6eaca296a8</elem>
-<elem key="sha1">655d2d6945050a953126b5545637d3c37cc33f82</elem>
-<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC0DCCAbigAwIBAgIQVQqQeCasSb5IDSD0DrWLqzANBgkqhkiG9w0BAQsFADAR&#xa;MQ8wDQYDVQQDEwZuaWNrZWwwHhcNMjEwODMxMDE1MjA0WhcNMjIwMzAyMDE1MjA0&#xa;WjARMQ8wDQYDVQQDEwZuaWNrZWwwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQDly/vmp00kCX31dd9QTeRGu3ItdtQNYM4TJrK99vAuh5uDYWlr5f6VRUZb&#xa;toKy2GCJLwTATLU7GOiOu/Q1asag3CitGi01gq23WEkOgrBW2+AyKi38R1+hYsFn&#xa;1wHH5HlUbTQN33yhDVXwPdxnqXh1oAiCBvOOZfBSiAgWTUBooA7YM9tJVmtkT+bi&#xa;DYaG3ZF4RS3shMquqEg9490Tto4RN3USeuzLEDZXLAiQeapL3ZbPcNGZHEWPduZN&#xa;6yfEryzOh535Kg6Nkte/aapnwit/HFJN/drCKxciizU+/ahUOXVvmuSppInMVftT&#xa;bj01sS5csyHdOKetsc16+OsRg+6dAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUF&#xa;BwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsFAAOCAQEAHIa0pNQxeV+ZW1nc&#xa;WIkIWlCeaOrSGgdLa0dFn9F/gJCiroRYst1iaoRMX8TI2ORlP7rcZO5SGUAWiziQ&#xa;yfjoh4XFun5nyp9QYik6OtprXYiBLgTB+yJEMLOeQXIisO6mRJg0XVgoaBYOp6MQ&#xa;wulxC0+ZWGe+2mlALcNTTl9EeYyJlQ4PMWCpdV6nRxGLk2aXwunRozMJ8GOvZu16&#xa;CaAAty1f2Ecxh7KqMBU8kAXVRp9nmQ2BFmBljgz3Q5q5LHyCHzCTP46w1vT+E9bP&#xa;+EGLOiMlpCrWgsn2dsoCuzWS9K796HY1klQiygZIgi1i+uE082ZJdRq4q+1wb9Bn&#xa;s/3tQw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
-</script><script id="ssl-date" output="2021-09-01T01:58:43+00:00; +1s from scanner time."><elem key="delta">1.0</elem>
-<elem key="date">2021-09-01T01:58:43+00:00</elem>
+<elem key="md5">3eded31c8d014ef32f397425639d5594</elem>
+<elem key="sha1">7e2b1544bca9d5b83099b5a0890ff28b802c97af</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC0DCCAbigAwIBAgIQefjfY+aTzbJN8yTl26B27jANBgkqhkiG9w0BAQsFADAR&#xa;MQ8wDQYDVQQDEwZuaWNrZWwwHhcNMjIwNjE1MDMwNzIxWhcNMjIxMjE1MDMwNzIx&#xa;WjARMQ8wDQYDVQQDEwZuaWNrZWwwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQDly/vmp00kCX31dd9QTeRGu3ItdtQNYM4TJrK99vAuh5uDYWlr5f6VRUZb&#xa;toKy2GCJLwTATLU7GOiOu/Q1asag3CitGi01gq23WEkOgrBW2+AyKi38R1+hYsFn&#xa;1wHH5HlUbTQN33yhDVXwPdxnqXh1oAiCBvOOZfBSiAgWTUBooA7YM9tJVmtkT+bi&#xa;DYaG3ZF4RS3shMquqEg9490Tto4RN3USeuzLEDZXLAiQeapL3ZbPcNGZHEWPduZN&#xa;6yfEryzOh535Kg6Nkte/aapnwit/HFJN/drCKxciizU+/ahUOXVvmuSppInMVftT&#xa;bj01sS5csyHdOKetsc16+OsRg+6dAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUF&#xa;BwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsFAAOCAQEAigm3TUIaSd8/HyWP&#xa;0k696jibxz4yEiHOO9NawP/vloecbk5vZmuZePm1mO44Uqpy/rSYzb/dzvSBrv4e&#xa;OxIr0y1q8wkiKKFvHs+gicA8SBsll+LrmHo55/cy4SVHmrdKqyYcCaqcHMwWKrC7&#xa;6aAd9NdgDKx7Zw3GuqU1bhqi0v/jas+cO1YhanWBEqimgwYEJ63hdQST+89yARRi&#xa;fI3ZphoCoiG+R4756vG0fBIqwnMknq8SC2nCxr6FIlZKq7ui50ZyG/QSHoH8IMT3&#xa;S3ZW7ih1Dx/b294vz3ptGcF7vr3z2Cf6M6gsas85tfRPqzrlh9fCvIjLqsmU7ndL&#xa;AjbkbQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2022-06-16T03:11:34+00:00; -1s from scanner time."><elem key="date">2022-06-16T03:11:34+00:00</elem>
+<elem key="delta">-1.0</elem>
+</script><script id="rdp-ntlm-info" output="&#xa;  Target_Name: NICKEL&#xa;  NetBIOS_Domain_Name: NICKEL&#xa;  NetBIOS_Computer_Name: NICKEL&#xa;  DNS_Domain_Name: nickel&#xa;  DNS_Computer_Name: nickel&#xa;  Product_Version: 10.0.18362&#xa;  System_Time: 2022-06-16T03:10:30+00:00"><elem key="Target_Name">NICKEL</elem>
+<elem key="NetBIOS_Domain_Name">NICKEL</elem>
+<elem key="NetBIOS_Computer_Name">NICKEL</elem>
+<elem key="DNS_Domain_Name">nickel</elem>
+<elem key="DNS_Computer_Name">nickel</elem>
+<elem key="Product_Version">10.0.18362</elem>
+<elem key="System_Time">2022-06-16T03:10:30+00:00</elem>
 </script></port>
 <port protocol="tcp" portid="8089"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
 </script><script id="http-title" output="Site doesn&apos;t have a title."></script></port>
 <port protocol="tcp" portid="33333"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
 </script><script id="http-title" output="Site doesn&apos;t have a title."></script></port>
 </ports>
-<hostscript><script id="smb2-security-mode" output="SMB: Couldn&apos;t find a NetBIOS name that works for the server. Sorry!">false</script><script id="smb2-time" output="ERROR: Script execution failed (use -d to debug)"/></hostscript><times srtt="56552" rttvar="12549" to="106748"/>
+<hostscript><script id="smb2-time" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb2-security-mode" output="SMB: Couldn&apos;t find a NetBIOS name that works for the server. Sorry!">false</script></hostscript><times srtt="46483" rttvar="8300" to="100000"/>
 </host>
-<runstats><finished time="1630461523" timestr="Tue Aug 31 21:58:43 2021" summary="Nmap done at Tue Aug 31 21:58:43 2021; 1 IP address (1 host up) scanned in 83.30 seconds" elapsed="83.30" exit="success"/><hosts up="1" down="0" total="1"/>
+<runstats><finished time="1655349095" timestr="Wed Jun 15 23:11:35 2022" summary="Nmap done at Wed Jun 15 23:11:35 2022; 1 IP address (1 host up) scanned in 82.51 seconds" elapsed="82.51" exit="success"/><hosts up="1" down="0" total="1"/>
 </runstats>
 </nmaprun>

@@ -1,7 +1,8 @@
-# Nmap 7.91 scan initiated Tue Aug 31 21:54:26 2021 as: nmap -Pn -p- -oA nmap/full-port 192.168.159.99
-Nmap scan report for 192.168.159.99
-Host is up (0.057s latency).
-Not shown: 65528 filtered ports
+# Nmap 7.92 scan initiated Wed Jun 15 23:08:08 2022 as: nmap -p- -oA Nickel/nmap/full-port --open -Pn 192.168.243.99
+Nmap scan report for 192.168.243.99
+Host is up (0.050s latency).
+Not shown: 65528 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
 PORT      STATE SERVICE
 21/tcp    open  ftp
 22/tcp    open  ssh
@@ -11,4 +12,4 @@ PORT      STATE SERVICE
 8089/tcp  open  unknown
 33333/tcp open  dgi-serv
 
-# Nmap done at Tue Aug 31 21:56:12 2021 -- 1 IP address (1 host up) scanned in 105.98 seconds
+# Nmap done at Wed Jun 15 23:10:12 2022 -- 1 IP address (1 host up) scanned in 124.49 seconds
