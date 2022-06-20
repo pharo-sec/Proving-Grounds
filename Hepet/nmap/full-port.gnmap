@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Fri Jun 17 19:54:32 2022 as: nmap -p- -oA Hepet/nmap/full-port --open -Pn 192.168.66.140
+Host: 192.168.66.140 ()	Status: Up
+Host: 192.168.66.140 ()	Ports: 25/open/tcp//smtp///, 79/open/tcp//finger///, 105/open/tcp//csnet-ns///, 106/open/tcp//pop3pw///, 110/open/tcp//pop3///, 143/open/tcp//imap///, 443/open/tcp//https///, 2224/open/tcp//efi-mg///, 7680/open/tcp//pando-pub///, 8000/open/tcp//http-alt///, 11100/open/tcp//unknown///, 20001/open/tcp//microsan///, 33006/open/tcp/////	Ignored State: filtered (65522)
+# Nmap done at Fri Jun 17 19:56:30 2022 -- 1 IP address (1 host up) scanned in 118.31 seconds

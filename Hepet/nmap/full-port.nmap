@@ -1,0 +1,21 @@
+# Nmap 7.92 scan initiated Fri Jun 17 19:54:32 2022 as: nmap -p- -oA Hepet/nmap/full-port --open -Pn 192.168.66.140
+Nmap scan report for 192.168.66.140
+Host is up (0.055s latency).
+Not shown: 65522 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+25/tcp    open  smtp
+79/tcp    open  finger
+105/tcp   open  csnet-ns
+106/tcp   open  pop3pw
+110/tcp   open  pop3
+143/tcp   open  imap
+443/tcp   open  https
+2224/tcp  open  efi-mg
+7680/tcp  open  pando-pub
+8000/tcp  open  http-alt
+11100/tcp open  unknown
+20001/tcp open  microsan
+33006/tcp open  unknown
+
+# Nmap done at Fri Jun 17 19:56:30 2022 -- 1 IP address (1 host up) scanned in 118.31 seconds

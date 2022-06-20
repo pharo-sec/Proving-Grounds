@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sat Jun 18 00:04:23 2022 as: nmap -p 22,80,5132,8433 -sC -sV -oA Depreciated/nmap/service-scan -Pn 192.168.66.170
+Host: 192.168.66.170 ()	Status: Up
+Host: 192.168.66.170 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/, 5132/open/tcp//unknown///, 8433/open/tcp//http//Werkzeug httpd 2.0.2 (Python 3.8.10)/
+# Nmap done at Sat Jun 18 00:05:30 2022 -- 1 IP address (1 host up) scanned in 67.14 seconds

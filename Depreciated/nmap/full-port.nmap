@@ -1,0 +1,11 @@
+# Nmap 7.92 scan initiated Sat Jun 18 00:04:04 2022 as: nmap -p- -oA Depreciated/nmap/full-port --open -Pn 192.168.66.170
+Nmap scan report for 192.168.66.170
+Host is up (0.055s latency).
+Not shown: 65531 closed tcp ports (conn-refused)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+5132/tcp open  unknown
+8433/tcp open  unknown
+
+# Nmap done at Sat Jun 18 00:04:23 2022 -- 1 IP address (1 host up) scanned in 19.00 seconds
