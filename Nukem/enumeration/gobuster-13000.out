@@ -1,0 +1,5 @@
+/images               (Status: 301) [Size: 169] [--> http://192.168.66.105:13000/images/]
+/css                  (Status: 301) [Size: 169] [--> http://192.168.66.105:13000/css/]
+/js                   (Status: 301) [Size: 169] [--> http://192.168.66.105:13000/js/]
+/vendor               (Status: 301) [Size: 169] [--> http://192.168.66.105:13000/vendor/]
+/fonts                (Status: 301) [Size: 169] [--> http://192.168.66.105:13000/fonts/]

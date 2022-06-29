@@ -1,0 +1,2 @@
+# Nmap 7.92 scan initiated Mon Jun 20 19:37:55 2022 as: nmap -sU -oA /home/pharo/Proving-Grounds/Squid/nmap/udp-scan 192.168.101.186
+# Nmap done at Mon Jun 20 19:37:58 2022 -- 1 IP address (0 hosts up) scanned in 3.12 seconds

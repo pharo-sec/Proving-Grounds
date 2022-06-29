@@ -1,0 +1,11 @@
+# Nmap 7.92 scan initiated Wed Jun 22 16:25:34 2022 as: nmap -p 80 -sC -sV -oA Craft/nmap/service-scan -Pn 192.168.241.169
+Nmap scan report for 192.168.241.169
+Host is up (0.045s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.48 ((Win64) OpenSSL/1.1.1k PHP/8.0.7)
+|_http-title: Craft
+|_http-server-header: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.7
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jun 22 16:25:42 2022 -- 1 IP address (1 host up) scanned in 8.20 seconds

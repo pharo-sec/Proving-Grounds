@@ -1,0 +1,4 @@
+/wp-content           (Status: 301) [Size: 241] [--> http://192.168.66.105/wp-content/]
+/wordpress            (Status: 301) [Size: 240] [--> http://192.168.66.105/wordpress/]
+/wp-includes          (Status: 301) [Size: 242] [--> http://192.168.66.105/wp-includes/]
+/wp-admin             (Status: 301) [Size: 239] [--> http://192.168.66.105/wp-admin/]

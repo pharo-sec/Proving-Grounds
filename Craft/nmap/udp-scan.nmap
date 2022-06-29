@@ -1,0 +1,7 @@
+# Nmap 7.92 scan initiated Wed Jun 22 17:12:45 2022 as: nmap -sU -oA nmap/udp-scan -Pn 192.168.241.169
+Nmap scan report for craft.offsec (192.168.241.169)
+Host is up.
+All 1000 scanned ports on craft.offsec (192.168.241.169) are in ignored states.
+Not shown: 1000 open|filtered udp ports (no-response)
+
+# Nmap done at Wed Jun 22 17:16:07 2022 -- 1 IP address (1 host up) scanned in 201.42 seconds

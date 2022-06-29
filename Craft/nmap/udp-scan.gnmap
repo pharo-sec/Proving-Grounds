@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Wed Jun 22 17:12:45 2022 as: nmap -sU -oA nmap/udp-scan -Pn 192.168.241.169
+Host: 192.168.241.169 (craft.offsec)	Status: Up
+Host: 192.168.241.169 (craft.offsec)	Ports: 	Ignored State: open|filtered (1000)
+# Nmap done at Wed Jun 22 17:16:07 2022 -- 1 IP address (1 host up) scanned in 201.42 seconds

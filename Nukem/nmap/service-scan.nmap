@@ -1,0 +1,36 @@
+# Nmap 7.92 scan initiated Thu Jun 23 00:08:11 2022 as: nmap -p 22,80,3306,5000,13000,36445 -sC -sV -oA Nukem/nmap/service-scan -Pn 192.168.66.105
+Nmap scan report for 192.168.66.105
+Host is up (0.059s latency).
+
+PORT      STATE SERVICE     VERSION
+22/tcp    open  ssh         OpenSSH 8.3 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 3e:6a:f5:d3:30:08:7a:ec:38:28:a0:88:4d:75:da:19 (RSA)
+|   256 43:3b:b5:bf:93:86:68:e9:d5:75:9c:7d:26:94:55:81 (ECDSA)
+|_  256 e3:f7:1c:ae:cd:91:c1:28:a3:3a:5b:f6:3e:da:3f:58 (ED25519)
+80/tcp    open  http        Apache httpd 2.4.46 ((Unix) PHP/7.4.10)
+|_http-server-header: Apache/2.4.46 (Unix) PHP/7.4.10
+|_http-generator: WordPress 5.5.1
+|_http-title: Retro Gamming &#8211; Just another WordPress site
+3306/tcp  open  mysql?
+| fingerprint-strings: 
+|   NULL, ms-sql-s, oracle-tns: 
+|_    Host '192.168.49.66' is not allowed to connect to this MariaDB server
+5000/tcp  open  http        Werkzeug httpd 1.0.1 (Python 3.8.5)
+|_http-server-header: Werkzeug/1.0.1 Python/3.8.5
+|_http-title: 404 Not Found
+13000/tcp open  http        nginx 1.18.0
+|_http-server-header: nginx/1.18.0
+|_http-title: Login V14
+36445/tcp open  netbios-ssn Samba smbd 4.6.2
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.92%I=7%D=6/23%Time=62B3E72B%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,4C,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.66'\x20is\x20not\x20all
+SF:owed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(oracle-tns
+SF:,4C,"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.66'\x20is\x20not\x20allow
+SF:ed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(ms-sql-s,4C,
+SF:"H\0\0\x01\xffj\x04Host\x20'192\.168\.49\.66'\x20is\x20not\x20allowed\x
+SF:20to\x20connect\x20to\x20this\x20MariaDB\x20server");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jun 23 00:09:12 2022 -- 1 IP address (1 host up) scanned in 61.60 seconds

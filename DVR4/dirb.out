@@ -1,0 +1,21 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Sat Jun 25 22:24:10 2022
+URL_BASE: http://192.168.66.179:8080/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+*** Generating Wordlist...                                                                               GENERATED WORDS: 4612
+
+---- Scanning URL: http://192.168.66.179:8080/ ----
+*** Calculating NOT_FOUND code...(!) WARNING: NOT_FOUND[] page not stable, unable to determine the correct URLs {200}.
+    (Try using FineTunning: '-f')
+                                                                                                                                                              
+-----------------
+END_TIME: Sat Jun 25 22:24:10 2022
+DOWNLOADED: 0 - FOUND: 0

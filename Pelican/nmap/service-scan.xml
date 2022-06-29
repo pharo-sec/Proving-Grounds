@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Wed Jun 22 20:08:22 2022 as: nmap -p 22,139,445,631,2181,2222,8080,8081,44091 -sC -sV -oA Pelican/nmap/service-scan -Pn 192.168.241.98 -->
+<nmaprun scanner="nmap" args="nmap -p 22,139,445,631,2181,2222,8080,8081,44091 -sC -sV -oA Pelican/nmap/service-scan -Pn 192.168.241.98" start="1655942902" startstr="Wed Jun 22 20:08:22 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="9" services="22,139,445,631,2181,2222,8080-8081,44091"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1655942902" endtime="1655942921"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.241.98" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 a8:e1:60:68:be:f5:8e:70:70:54:b4:27:ee:9a:7e:7f (RSA)&#xa;  256 bb:99:9a:45:3f:35:0b:b3:49:e6:cf:11:49:87:8d:94 (ECDSA)&#xa;  256 f2:eb:fc:45:d7:e9:80:77:66:a3:93:53:de:00:57:9c (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDssyyACw3AHaTatHhBU1VyBRbKOirrDG8M9IjpJPTf/v8mdIqiXk1HsBdoFZcsmWJVV4OXC7GMcHa+s0tZceTmgGf5TpiCB2yXUYPZre183LjJWM6KQMZVI0LHz9Yd3ji2bdD5jjtVxwnjrdx8GlU1THMGbzZivfSsPF18arMIq3ukYBS09Ov1SIKR4DJ7pjtBRutRBZKI/8/H+uB2u47AQRwbWuVaOmtZyDrfvgL/IqAFRQrbeP1VNQAErzHl8wNuk1vR+yROv0j7smTqoqqc8aB751O63gtBdCvKzpigwFDLyxYuzu8dW1Hh6ZQzaQZgWkw6SZeExAijK7yXSU61</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">a8e16068bef58e707054b427ee9a7e7f</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNUPmkVV/Q+iD07j1sFmdFWp7yppofTTgfzAhvMkyGPulIdMDbzFgW/pRAq3R3zZV7aEcWAMfFHgdXfj3W4FUuc=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">bb999a453f350bb349e6cf1149878d94</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIIPO1eLYoJ0AhVJ5NIDfaSrfUis34Bw5bKMMdFWzHPx0</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">f2ebfc45d7e9807766a39353de00579c</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="PELICAN" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.9.5-Debian" extrainfo="workgroup: WORKGROUP" hostname="PELICAN" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="631"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ipp" product="CUPS" version="2.2" method="probed" conf="10"><cpe>cpe:/a:apple:cups:2.2</cpe></service><script id="http-title" output="Forbidden - CUPS v2.2.10"><elem key="title">Forbidden - CUPS v2.2.10</elem>
+</script><script id="http-methods" output="&#xa;  Potentially risky methods: PUT"><table key="Potentially risky methods">
+<elem>PUT</elem>
+</table>
+</script><script id="http-server-header" output="CUPS/2.2 IPP/2.1"><elem>CUPS/2.2 IPP/2.1</elem>
+</script></port>
+<port protocol="tcp" portid="2181"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="zookeeper" product="Zookeeper" version="3.4.6-1569965" extrainfo="Built on 02/20/2014" method="probed" conf="10"><cpe>cpe:/a:zookeeper:zookeeper:3.4.6-1569965</cpe></service></port>
+<port protocol="tcp" portid="2222"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 a8:e1:60:68:be:f5:8e:70:70:54:b4:27:ee:9a:7e:7f (RSA)&#xa;  256 bb:99:9a:45:3f:35:0b:b3:49:e6:cf:11:49:87:8d:94 (ECDSA)&#xa;  256 f2:eb:fc:45:d7:e9:80:77:66:a3:93:53:de:00:57:9c (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDssyyACw3AHaTatHhBU1VyBRbKOirrDG8M9IjpJPTf/v8mdIqiXk1HsBdoFZcsmWJVV4OXC7GMcHa+s0tZceTmgGf5TpiCB2yXUYPZre183LjJWM6KQMZVI0LHz9Yd3ji2bdD5jjtVxwnjrdx8GlU1THMGbzZivfSsPF18arMIq3ukYBS09Ov1SIKR4DJ7pjtBRutRBZKI/8/H+uB2u47AQRwbWuVaOmtZyDrfvgL/IqAFRQrbeP1VNQAErzHl8wNuk1vR+yROv0j7smTqoqqc8aB751O63gtBdCvKzpigwFDLyxYuzu8dW1Hh6ZQzaQZgWkw6SZeExAijK7yXSU61</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">a8e16068bef58e707054b427ee9a7e7f</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNUPmkVV/Q+iD07j1sFmdFWp7yppofTTgfzAhvMkyGPulIdMDbzFgW/pRAq3R3zZV7aEcWAMfFHgdXfj3W4FUuc=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">bb999a453f350bb349e6cf1149878d94</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIIPO1eLYoJ0AhVJ5NIDfaSrfUis34Bw5bKMMdFWzHPx0</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">f2ebfc45d7e9807766a39353de00579c</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Jetty" version="1.0" method="probed" conf="10"><cpe>cpe:/a:mortbay:jetty:1.0</cpe></service><script id="http-title" output="Error 404 Not Found"><elem key="title">Error 404 Not Found</elem>
+</script><script id="http-server-header" output="Jetty(1.0)"><elem>Jetty(1.0)</elem>
+</script></port>
+<port protocol="tcp" portid="8081"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.14.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.14.2</cpe></service><script id="http-title" output="Did not follow redirect to http://192.168.241.98:8080/exhibitor/v1/ui/index.html"><elem key="redirect_url">http://192.168.241.98:8080/exhibitor/v1/ui/index.html</elem>
+</script><script id="http-server-header" output="nginx/1.14.2"><elem>nginx/1.14.2</elem>
+</script></port>
+<port protocol="tcp" portid="44091"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="java-rmi" product="Java RMI" method="probed" conf="10"/></port>
+</ports>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2022-06-23T00:08:38&#xa;  start_date: N/A"><elem key="date">2022-06-23T00:08:38</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled but not required"><table key="3.1.1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.9.5-Debian)&#xa;  Computer name: pelican&#xa;  NetBIOS computer name: PELICAN\x00&#xa;  Domain name: \x00&#xa;  FQDN: pelican&#xa;  System time: 2022-06-22T20:08:37-04:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.9.5-Debian</elem>
+<elem key="server">PELICAN\x00</elem>
+<elem key="date">2022-06-22T20:08:37-04:00</elem>
+<elem key="fqdn">pelican</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="clock-skew" output="mean: 1h20m00s, deviation: 2h18m34s, median: 0s"><elem key="mean">4800</elem>
+<elem key="median">0</elem>
+<elem key="count">3</elem>
+<elem key="stddev">8314</elem>
+</script></hostscript><times srtt="46060" rttvar="4648" to="100000"/>
+</host>
+<runstats><finished time="1655942921" timestr="Wed Jun 22 20:08:41 2022" summary="Nmap done at Wed Jun 22 20:08:41 2022; 1 IP address (1 host up) scanned in 19.28 seconds" elapsed="19.28" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

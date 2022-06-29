@@ -1,0 +1,5 @@
+# Nmap 7.92 scan initiated Wed Jun 22 20:07:58 2022 as: nmap -p- -oA Pelican/nmap/full-port --open -Pn -vv 192.168.241.98
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.241.98 ()	Status: Up
+Host: 192.168.241.98 ()	Ports: 22/open/tcp//ssh///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 631/open/tcp//ipp///, 2181/open/tcp//eforward///, 2222/open/tcp//EtherNetIP-1///, 8080/open/tcp//http-proxy///, 8081/open/tcp//blackice-icecap///, 44091/open/tcp/////
+# Nmap done at Wed Jun 22 20:08:22 2022 -- 1 IP address (1 host up) scanned in 24.00 seconds

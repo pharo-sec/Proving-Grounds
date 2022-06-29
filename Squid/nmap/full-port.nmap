@@ -1,0 +1,1 @@
+# Nmap 7.92 scan initiated Mon Jun 20 19:22:06 2022 as: nmap -p- -oA Squid/nmap/full-port --open -Pn -vv 192.168.101.189

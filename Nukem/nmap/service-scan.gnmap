@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Thu Jun 23 00:08:11 2022 as: nmap -p 22,80,3306,5000,13000,36445 -sC -sV -oA Nukem/nmap/service-scan -Pn 192.168.66.105
+Host: 192.168.66.105 ()	Status: Up
+Host: 192.168.66.105 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.3 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.46 ((Unix) PHP|7.4.10)/, 3306/open/tcp//mysql?///, 5000/open/tcp//http//Werkzeug httpd 1.0.1 (Python 3.8.5)/, 13000/open/tcp//http//nginx 1.18.0/, 36445/open/tcp//netbios-ssn//Samba smbd 4.6.2/
+# Nmap done at Thu Jun 23 00:09:12 2022 -- 1 IP address (1 host up) scanned in 61.60 seconds

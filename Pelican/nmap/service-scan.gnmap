@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Wed Jun 22 20:08:22 2022 as: nmap -p 22,139,445,631,2181,2222,8080,8081,44091 -sC -sV -oA Pelican/nmap/service-scan -Pn 192.168.241.98
+Host: 192.168.241.98 ()	Status: Up
+Host: 192.168.241.98 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 4.9.5-Debian (workgroup: WORKGROUP)/, 631/open/tcp//ipp//CUPS 2.2/, 2181/open/tcp//zookeeper//Zookeeper 3.4.6-1569965 (Built on 02|20|2014)/, 2222/open/tcp//ssh//OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)/, 8080/open/tcp//http//Jetty 1.0/, 8081/open/tcp//http//nginx 1.14.2/, 44091/open/tcp//java-rmi//Java RMI/
+# Nmap done at Wed Jun 22 20:08:41 2022 -- 1 IP address (1 host up) scanned in 19.28 seconds

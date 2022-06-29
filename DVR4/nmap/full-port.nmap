@@ -1,0 +1,12 @@
+# Nmap 7.92 scan initiated Sat Jun 25 22:19:29 2022 as: nmap -p- -oA DVR4/nmap/full-port --open -Pn -vv 192.168.66.179
+Nmap scan report for 192.168.66.179
+Host is up, received user-set (0.054s latency).
+Scanned at 2022-06-25 22:19:29 EDT for 109s
+Not shown: 65533 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE    REASON
+22/tcp   open  ssh        syn-ack
+8080/tcp open  http-proxy syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Jun 25 22:21:18 2022 -- 1 IP address (1 host up) scanned in 109.12 seconds

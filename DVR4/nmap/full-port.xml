@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sat Jun 25 22:19:29 2022 as: nmap -p- -oA DVR4/nmap/full-port -&#45;open -Pn -vv 192.168.66.179 -->
+<nmaprun scanner="nmap" args="nmap -p- -oA DVR4/nmap/full-port -&#45;open -Pn -vv 192.168.66.179" start="1656209969" startstr="Sat Jun 25 22:19:29 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1656209969"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1656209969"/>
+<taskbegin task="Connect Scan" time="1656209969"/>
+<taskprogress task="Connect Scan" time="1656210000" percent="16.42" remaining="158" etc="1656210158"/>
+<taskprogress task="Connect Scan" time="1656210030" percent="43.79" remaining="79" etc="1656210108"/>
+<taskend task="Connect Scan" time="1656210078" extrainfo="65535 total ports"/>
+<host starttime="1656209969" endtime="1656210078"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.66.179" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-response" count="65533" proto="tcp" ports="1-21,23-8079,8081-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="53578" rttvar="2383" to="100000"/>
+</host>
+<runstats><finished time="1656210078" timestr="Sat Jun 25 22:21:18 2022" summary="Nmap done at Sat Jun 25 22:21:18 2022; 1 IP address (1 host up) scanned in 109.12 seconds" elapsed="109.12" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

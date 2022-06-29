@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sun Jun 26 22:22:43 2022 as: nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,3389,5985,8080,9389,49666,49668,49673,49674,49677,49703 -sC -sV -oA Heist/nmap/service-scan -Pn 192.168.66.165 -->
+<nmaprun scanner="nmap" args="nmap -p 53,88,135,139,389,445,464,593,636,3268,3269,3389,5985,8080,9389,49666,49668,49673,49674,49677,49703 -sC -sV -oA Heist/nmap/service-scan -Pn 192.168.66.165" start="1656296563" startstr="Sun Jun 26 22:22:43 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="21" services="53,88,135,139,389,445,464,593,636,3268-3269,3389,5985,8080,9389,49666,49668,49673-49674,49677,49703"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1656296564" endtime="1656296660"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.66.165" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" product="Simple DNS Plus" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:jh_software:simple_dns_plus</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="kerberos-sec" product="Microsoft Windows Kerberos" extrainfo="server time: 2022-06-27 02:22:50Z" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:kerberos</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: heist.offsec0., Site: Default-First-Site-Name" hostname="DC01" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ldap" product="Microsoft Windows Active Directory LDAP" extrainfo="Domain: heist.offsec0., Site: Default-First-Site-Name" hostname="DC01" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="tcpwrapped" method="probed" conf="8"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="2022-06-27T02:24:19+00:00; 0s from scanner time."><elem key="date">2022-06-27T02:24:19+00:00</elem>
+<elem key="delta">0.0</elem>
+</script><script id="rdp-ntlm-info" output="&#xa;  Target_Name: HEIST&#xa;  NetBIOS_Domain_Name: HEIST&#xa;  NetBIOS_Computer_Name: DC01&#xa;  DNS_Domain_Name: heist.offsec&#xa;  DNS_Computer_Name: DC01.heist.offsec&#xa;  DNS_Tree_Name: heist.offsec&#xa;  Product_Version: 10.0.17763&#xa;  System_Time: 2022-06-27T02:23:39+00:00"><elem key="Target_Name">HEIST</elem>
+<elem key="NetBIOS_Domain_Name">HEIST</elem>
+<elem key="NetBIOS_Computer_Name">DC01</elem>
+<elem key="DNS_Domain_Name">heist.offsec</elem>
+<elem key="DNS_Computer_Name">DC01.heist.offsec</elem>
+<elem key="DNS_Tree_Name">heist.offsec</elem>
+<elem key="Product_Version">10.0.17763</elem>
+<elem key="System_Time">2022-06-27T02:23:39+00:00</elem>
+</script><script id="ssl-cert" output="Subject: commonName=DC01.heist.offsec&#xa;Not valid before: 2022-06-26T02:20:05&#xa;Not valid after:  2022-12-26T02:20:05"><table key="subject">
+<elem key="commonName">DC01.heist.offsec</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">DC01.heist.offsec</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CA5602AFFA2A7A3078F5548CE2293410EFF6F0B8F6450351FA8D8077D76327598527D9BD01F9A50641FD6801302872AE633631C8DF2170593430B8EE1BAAA33D8E8EB85BE03A9E0CB334AF45C323714A1DC0789F9BEFC42D3D30CB1474605DD44E63739D98D38BD0A201C51A36012A829760C43D40B2C779C4501E18482890CEAF3E6346709960F53DBEDE596CC30854DA9E0BD30BF5041821BD9579E8803382368254E800E16055C184E375DA68D12073A00AA91F4237AD08FBE180F0201B789E15FD8F9B05D8520E1F72B8C648FC5528E1C71907FC1C228D04899135E4F66BD8303E397329AF3661835021FE4F4E7607B7124B2BDC43D93B3FC3CF802E0871</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2022-06-26T02:20:05</elem>
+<elem key="notAfter">2022-12-26T02:20:05</elem>
+</table>
+<elem key="md5">47ba9c980658368705e092095e351a19</elem>
+<elem key="sha1">8071233f6f50333eda8e801a95dba646ef3ffbd0</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIC5jCCAc6gAwIBAgIQIzvjaNVx9oFDYKqH5vo/EDANBgkqhkiG9w0BAQsFADAc&#xa;MRowGAYDVQQDExFEQzAxLmhlaXN0Lm9mZnNlYzAeFw0yMjA2MjYwMjIwMDVaFw0y&#xa;MjEyMjYwMjIwMDVaMBwxGjAYBgNVBAMTEURDMDEuaGVpc3Qub2Zmc2VjMIIBIjAN&#xa;BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAylYCr/oqejB49VSM4ik0EO/28Lj2&#xa;RQNR+o2Ad9djJ1mFJ9m9AfmlBkH9aAEwKHKuYzYxyN8hcFk0MLjuG6qjPY6OuFvg&#xa;Op4MszSvRcMjcUodwHifm+/ELT0wyxR0YF3UTmNznZjTi9CiAcUaNgEqgpdgxD1A&#xa;ssd5xFAeGEgokM6vPmNGcJlg9T2+3llswwhU2p4L0wv1BBghvZV56IAzgjaCVOgA&#xa;4WBVwYTjddpo0SBzoAqpH0I3rQj74YDwIBt4nhX9j5sF2FIOH3K4xkj8VSjhxxkH&#xa;/BwijQSJkTXk9mvYMD45cymvNmGDUCH+T052B7cSSyvcQ9k7P8PPgC4IcQIDAQAB&#xa;oyQwIjATBgNVHSUEDDAKBggrBgEFBQcDATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcN&#xa;AQELBQADggEBAGZ/mImeKOrYvSdQMVrXRmMU3Xss/6bO6FcUKiT66I/+M7kFa61j&#xa;qd8gxBj05UvHjtrIBg5gK91GtjKcAXn288e31Ayqdnf0itHnn5rH1wfcBCMXJby9&#xa;zbf3Y/F3ng+ODLUWZVxGnHRZyVwc8f/T+kUzny8KBAPC3pPjYgV6rWA3rhgNU3aQ&#xa;cEpJp2Oq6QbreTmjLh9iXBRtfZYZz1qx9LhBCkX4SIlW+MRDCvXSKw+BVVa/zgd0&#xa;tejAISx6bjkICrtkQ+sY9QfGTh5Q7xMAecC/lC0hsB61x0oz9MpVrScGGKuVDHam&#xa;hCJl4ccTMqJdrpYvs3eVltbxA/DNkhvOaaY=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Werkzeug httpd" version="2.0.1" extrainfo="Python 3.9.0" method="probed" conf="10"><cpe>cpe:/a:python:python:3.9.0</cpe></service><script id="http-server-header" output="Werkzeug/2.0.1 Python/3.9.0"><elem>Werkzeug/2.0.1 Python/3.9.0</elem>
+</script><script id="http-title" output="Super Secure Web Browser"><elem key="title">Super Secure Web Browser</elem>
+</script></port>
+<port protocol="tcp" portid="9389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mc-nmf" product=".NET Message Framing" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49673"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ncacn_http" product="Microsoft Windows RPC over HTTP" version="1.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49674"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49677"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49703"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-security-mode" output="&#xa;  3.1.1: &#xa;    Message signing enabled and required"><table key="3.1.1">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2022-06-27T02:23:43&#xa;  start_date: N/A"><elem key="date">2022-06-27T02:23:43</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><times srtt="55134" rttvar="1694" to="100000"/>
+</host>
+<runstats><finished time="1656296660" timestr="Sun Jun 26 22:24:20 2022" summary="Nmap done at Sun Jun 26 22:24:20 2022; 1 IP address (1 host up) scanned in 96.93 seconds" elapsed="96.93" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

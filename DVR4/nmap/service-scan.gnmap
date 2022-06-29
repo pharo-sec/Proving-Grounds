@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sat Jun 25 22:21:18 2022 as: nmap -p 22,8080 -sC -sV -oA DVR4/nmap/service-scan -Pn 192.168.66.179
+Host: 192.168.66.179 ()	Status: Up
+Host: 192.168.66.179 ()	Ports: 22/open/tcp//ssh//Bitvise WinSSHD 8.48 (FlowSsh 8.48; protocol 2.0; non-commercial use)/, 8080/open/tcp//http-proxy///
+# Nmap done at Sat Jun 25 22:21:55 2022 -- 1 IP address (1 host up) scanned in 37.16 seconds

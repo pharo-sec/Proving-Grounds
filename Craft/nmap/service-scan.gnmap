@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Wed Jun 22 16:25:34 2022 as: nmap -p 80 -sC -sV -oA Craft/nmap/service-scan -Pn 192.168.241.169
+Host: 192.168.241.169 ()	Status: Up
+Host: 192.168.241.169 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.48 ((Win64) OpenSSL|1.1.1k PHP|8.0.7)/
+# Nmap done at Wed Jun 22 16:25:42 2022 -- 1 IP address (1 host up) scanned in 8.20 seconds

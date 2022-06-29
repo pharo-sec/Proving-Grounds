@@ -1,0 +1,5 @@
+# Nmap 7.92 scan initiated Sat Jun 25 22:19:29 2022 as: nmap -p- -oA DVR4/nmap/full-port --open -Pn -vv 192.168.66.179
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.66.179 ()	Status: Up
+Host: 192.168.66.179 ()	Ports: 22/open/tcp//ssh///, 8080/open/tcp//http-proxy///	Ignored State: filtered (65533)
+# Nmap done at Sat Jun 25 22:21:18 2022 -- 1 IP address (1 host up) scanned in 109.12 seconds

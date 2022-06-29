@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Wed Jun 22 16:25:34 2022 as: nmap -p 80 -sC -sV -oA Craft/nmap/service-scan -Pn 192.168.241.169 -->
+<nmaprun scanner="nmap" args="nmap -p 80 -sC -sV -oA Craft/nmap/service-scan -Pn 192.168.241.169" start="1655929534" startstr="Wed Jun 22 16:25:34 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1655929534" endtime="1655929542"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.241.169" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.48" extrainfo="(Win64) OpenSSL/1.1.1k PHP/8.0.7" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.48</cpe></service><script id="http-title" output="Craft"><elem key="title">Craft</elem>
+</script><script id="http-server-header" output="Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.7"><elem>Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/8.0.7</elem>
+</script></port>
+</ports>
+<times srtt="44511" rttvar="44511" to="222555"/>
+</host>
+<runstats><finished time="1655929542" timestr="Wed Jun 22 16:25:42 2022" summary="Nmap done at Wed Jun 22 16:25:42 2022; 1 IP address (1 host up) scanned in 8.20 seconds" elapsed="8.20" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

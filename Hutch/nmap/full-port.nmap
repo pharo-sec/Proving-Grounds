@@ -1,0 +1,30 @@
+# Nmap 7.92 scan initiated Tue Jun 28 16:09:40 2022 as: nmap -p- -oA Hutch/nmap/full-port --open -Pn -vv 192.168.66.122
+Nmap scan report for 192.168.66.122
+Host is up, received user-set (0.056s latency).
+Scanned at 2022-06-28 16:09:41 EDT for 126s
+Not shown: 65515 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE          REASON
+53/tcp    open  domain           syn-ack
+80/tcp    open  http             syn-ack
+88/tcp    open  kerberos-sec     syn-ack
+135/tcp   open  msrpc            syn-ack
+139/tcp   open  netbios-ssn      syn-ack
+389/tcp   open  ldap             syn-ack
+445/tcp   open  microsoft-ds     syn-ack
+464/tcp   open  kpasswd5         syn-ack
+593/tcp   open  http-rpc-epmap   syn-ack
+636/tcp   open  ldapssl          syn-ack
+3268/tcp  open  globalcatLDAP    syn-ack
+3269/tcp  open  globalcatLDAPssl syn-ack
+5985/tcp  open  wsman            syn-ack
+9389/tcp  open  adws             syn-ack
+49666/tcp open  unknown          syn-ack
+49668/tcp open  unknown          syn-ack
+49669/tcp open  unknown          syn-ack
+49670/tcp open  unknown          syn-ack
+49672/tcp open  unknown          syn-ack
+49688/tcp open  unknown          syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Jun 28 16:11:47 2022 -- 1 IP address (1 host up) scanned in 126.53 seconds

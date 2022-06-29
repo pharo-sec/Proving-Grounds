@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Thu Jun 23 00:06:05 2022 as: nmap -p- -oA Nukem/nmap/full-port -&#45;open -Pn -vv 192.168.66.105 -->
+<nmaprun scanner="nmap" args="nmap -p- -oA Nukem/nmap/full-port -&#45;open -Pn -vv 192.168.66.105" start="1655957165" startstr="Thu Jun 23 00:06:05 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1655957165"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1655957165"/>
+<taskbegin task="Connect Scan" time="1655957165"/>
+<taskprogress task="Connect Scan" time="1655957196" percent="17.71" remaining="144" etc="1655957340"/>
+<taskprogress task="Connect Scan" time="1655957226" percent="35.53" remaining="111" etc="1655957337"/>
+<taskprogress task="Connect Scan" time="1655957256" percent="61.80" remaining="57" etc="1655957312"/>
+<taskend task="Connect Scan" time="1655957291" extrainfo="65535 total ports"/>
+<host starttime="1655957165" endtime="1655957291"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.66.105" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65529">
+<extrareasons reason="no-response" count="65529" proto="tcp" ports="1-21,23-79,81-3305,3307-4999,5001-12999,13001-36444,36446-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="upnp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="13000"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="36445"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+</ports>
+<times srtt="56240" rttvar="1999" to="100000"/>
+</host>
+<runstats><finished time="1655957291" timestr="Thu Jun 23 00:08:11 2022" summary="Nmap done at Thu Jun 23 00:08:11 2022; 1 IP address (1 host up) scanned in 125.41 seconds" elapsed="125.41" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

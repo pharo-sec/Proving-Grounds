@@ -1,4 +1,0 @@
-# Nmap 7.92 scan initiated Thu Jun  9 22:23:00 2022 as: nmap -p- -Pn -oA hello/nmap/full-port 192.168.200.64
-Host: 192.168.200.64 ()	Status: Up
-Host: 192.168.200.64 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 3306/open/tcp//mysql///, 8003/open/tcp//mcreport///	Ignored State: filtered (65529)
-# Nmap done at Thu Jun  9 22:24:51 2022 -- 1 IP address (1 host up) scanned in 111.39 seconds
